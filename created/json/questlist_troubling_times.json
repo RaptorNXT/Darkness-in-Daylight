@@ -10,11 +10,15 @@
             },
             {
                 "progress": 20,
-                "logText": "Since I had helped Defy, Umar and Nanath threw me out. I cannot enter the basement again. (1 XP) [End of quest]"
+                "logText": "Since I had helped Defy, Umar and Nanath threw me out. I cannot enter the basement again.",
+                "rewardExperience": 1,
+                "finishesQuest": 1
             },
             {
                 "progress": 30,
-                "logText": "Since I had looted the Thieves’ Guild vault after killing Defy, Umar and Nanath threw me out. I cannot enter the basement again. (1 XP) [End of quest]"
+                "logText": "Since I had looted the Thieves’ Guild vault after killing Defy, Umar and Nanath threw me out. I cannot enter the basement again.",
+                "rewardExperience": 1,
+                "finishesQuest": 1
             },
             {
                 "progress": 40,

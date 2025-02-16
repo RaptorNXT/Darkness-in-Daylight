@@ -1,0 +1,10 @@
+[
+    {
+        "id":"nanath",
+        "name":"nanath",
+        "iconID":"monsters_newb_1:41",
+        "monsterClass":"humanoid",
+        "spawnGroup":"nanath",
+        "phraseID":"nanath"
+    }
+]
