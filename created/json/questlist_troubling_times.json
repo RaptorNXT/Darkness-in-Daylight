@@ -1,0 +1,139 @@
+[
+    {
+        "id": "troubling_times",
+        "name": "Troubling times",
+        "showInLog": 1,
+        "stages": [
+            {
+                "progress": 10,
+                "logText": "I went to the Thieves’ Guild HQ in the basement in Fallhaven looking for things to do."
+            },
+            {
+                "progress": 20,
+                "logText": "Since I had helped Defy, Umar and Nanath threw me out. I cannot enter the basement again. (1 XP) [End of quest]"
+            },
+            {
+                "progress": 30,
+                "logText": "Since I had looted the Thieves’ Guild vault after killing Defy, Umar and Nanath threw me out. I cannot enter the basement again. (1 XP) [End of quest]"
+            },
+            {
+                "progress": 40,
+                "logText": "I met Nanath, who’s scared and upset, because someone had put a spell on all members of the Thieves’ Guild. This spell made all thieves noticeable. He asked me if I could help dispel the spell."
+            },
+            {
+                "progress": 50,
+                "logText": "Nanath told me to find out the Shadow Priest who had cast the spell on the Guild."
+            },
+            {
+                "progress": 60,
+                "logText": "I set out interviewing Shadow Priests to find who had cast the spell."
+            },
+            {
+                "progress": 70,
+                "logText": "Talion, Shadow Priest of Loneford, had cast the Striking Spectacle Shadow Spell on the Guild, on payment from Dameni, a mysterious lady leading a band of toughs"
+            },
+            {
+                "progress": 80,
+                "logText": "Talion could dispel the spell, using a few items - Villain's Ring, Troublemaker's Ring, Ring of backstabbing, Tears of the shadow, Luthor's Ring.  He also wanted 50,000 coins"
+            },
+            {
+                "progress": 90,
+                "logText": "Nanath told me Thieves Guild would give me 50,000 coins when I got the spell dispelled."
+            },
+            {
+                "progress": 100,
+                "logText": "I went back to Nanath as I couldn’t find Luthor's Ring anywhere. He told me to seek out Sly Seraphina."
+            },
+            {
+                "progress": 110,
+                "logText": "Sly didn’t believe me. She told me to go away."
+            },
+            {
+                "progress": 120,
+                "logText": "Nanath gave me Umar’s Signet Ring to convince Sly Seraphina."
+            },
+            {
+                "progress": 130,
+                "logText": "Sly Seraphina said that Luthor’s Ring was to be found in the cave which Crackshot tried to open. The door was sealed by Umar and Sly to prevent monsters in that cave from devastating Dhayavar. The sealing was done by using Luthor’s items. She and Umar decided to separate them, and keep them separate."
+            },
+            {
+                "progress": 140,
+                "logText": "Sly Seraphina felt that the danger was too high with opening that door. So, she disappeared."
+            },
+            {
+                "progress": 150,
+                "logText": "I had to find Sly Seraphina again."
+            },
+            {
+                "progress": 160,
+                "logText": "Nanath told me to either talk to Talion, or search Sly Seraphina either to the east of Sullengard, or in the mountains above Blackwater."
+            },
+            {
+                "progress": 170,
+                "logText": "Talion said, without the items he asked for, he couldn’t help. I had to find Sly Seraphina."
+            },
+            {
+                "progress": 180,
+                "logText": "After beating the tough guys protecting Sly Seraphina, she agreed to help me as she thought I was strong enough to help her beat the monsters in the cave."
+            },
+            {
+                "progress": 190,
+                "logText": "(If Sly had cheated me earlier) She gave me back the money she had stolen from me earlier."
+            },
+            {
+                "progress": 200,
+                "logText": "I went to cave door where Crackshot was defeated."
+            },
+            {
+                "progress": 210,
+                "logText": "I have Luthor’s Key. Sly Seraphina has Luthor’s Key Ring. The door opened."
+            },
+            {
+                "progress": 220,
+                "logText": "We entered the cave behind the door."
+            },
+            {
+                "progress": 230,
+                "logText": "Sly Seraphina got injured attacking one of the monsters."
+            },
+            {
+                "progress": 240,
+                "logText": "I killed all three monsters in the cave."
+            },
+            {
+                "progress": 250,
+                "logText": "I healed Sly Seraphina using potions."
+            },
+            {
+                "progress": 260,
+                "logText": "I searched the cave for Luthor’s Ring. I couldn’t find it."
+            },
+            {
+                "progress": 270,
+                "logText": "Sly had found the Ring. She gave it to me and told me to keep it safe. She returned to Sutdover bridge. I needed to go to Talion."
+            },
+            {
+                "progress": 280,
+                "logText": "I gave 50,000 coins, Villain's Ring, Troublemaker's Ring, Ring of backstabbing, Tears of the shadow, and Luthor's Ring to Talion."
+            },
+            {
+                "progress": 290,
+                "logText": "Talion used them to dispel the Spell."
+            },
+            {
+                "progress": 300,
+                "logText": "Talion returned Villain's Ring. Troublemaker's Ring. Ring of backstabbing. Tears of the shadow, and sold me back Luthor's Ring."
+            },
+            {
+                "progress": 310,
+                "logText": "Nanath gave me 50,000 coins and a reward for a job well done."
+            },
+            {
+                "progress": 320,
+                "logText": "Sly Seraphina was friendly to me – for now.",
+                "rewardExperience": 15000,
+                "finishesQuest": 1
+            }
+        ]
+    }
+]
