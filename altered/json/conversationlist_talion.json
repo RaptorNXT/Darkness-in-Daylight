@@ -1,0 +1,51 @@
+[
+    {
+        "id":"talion_0",
+        "message":"Shadow be with you.",
+        "replies":[
+            {
+                "text":"Do you know anything about the illness here in Loneford?",
+                "nextPhraseID":"talion_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"loneford",
+                        "value":11
+                    }
+                ]
+            },
+            {
+                "text":"Do you have anything to trade?",
+                "nextPhraseID":"S"
+            },
+            {
+                "text":"What blessings can you provide?",
+                "nextPhraseID":"talion_bless_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"maggots",
+                        "value":51
+                    }
+                ]
+            },
+            {
+                "text":"I need some help. I am trying to figure out who put a Shadow Spell which makes a person noticeable.",
+                "nextPhraseID":"tt_talion_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":70,
+						"negate":"true"
+                    }
+                ]
+            }
+        ]
+    }
+]

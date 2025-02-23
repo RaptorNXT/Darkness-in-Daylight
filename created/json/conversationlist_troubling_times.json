@@ -3,6 +3,26 @@
         "id":"nanath",
         "replies":[
             {
+                "nextPhraseID":"nanath_80",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"wanted_men",
+                        "value":80
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"nanath_70",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"wanted_men",
+                        "value":70
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"nanath_10",
                 "requires":[
                     {
@@ -29,6 +49,12 @@
                         "requireType":"questProgress",
                         "requireID":"wanted_men",
                         "value":57
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"wanted_men",
+                        "value":70,
+						"negate":true
                     }
                 ]
             }
@@ -197,6 +223,255 @@
         ]
     },
     {
+        "id":"nanath_70",
+		"message":"Oh, back again? I hope you bring good news.",
+        "replies":[
+            {
+                "text":"Talion, Shadow Priest, has put it on us after all – the Striking Spectacle Shadow Spell.",
+				"nextPhraseID":"nanath_72"
+            }
+        ]
+    },
+    {
+        "id":"nanath_72",
+		"message":"And?",
+        "replies":[
+            {
+                "text":"And ... I think I have to talk to Talion again.",
+				"nextPhraseID":"nanath_80",
+				"requires":[
+					{
+						"requireType":"factionScore",
+						"requireID":"troubling_times",
+						"value":80,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"Talion said, he can help dispel it.",
+				"nextPhraseID":"nanath_80",
+				"requires":[
+					{
+						"requireType":"factionScore",
+						"requireID":"troubling_times",
+						"value":80
+					}
+				]
+            }
+        ]
+    },
+    {
+        "id":"nanath_80",
+		"message":"What a relief.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"nanath_82"
+            }
+        ]
+    },
+    {
+        "id":"nanath_82",
+		"message":"What does he want in return?",
+        "replies":[
+            {
+                "text":"Lady Dameni paid him. Talion wants 50,000 coins to dispel us."",
+				"nextPhraseID":"nanath_84"
+            }
+        ]
+    },
+    {
+        "id":"nanath_86",
+		"message":"That's a lot, but it was to be expected. It's good that he doesn't want more.",
+        "replies":[
+            {
+                "text":"Well ... he also wants the following items: The Villain's Ring, Troublemaker's Ring, the Ring of backstabbing and the Tears of the shadow. And - most important - Luthor's Ring.",
+				"nextPhraseID":"nanath_90"
+            }
+        ]
+    },
+    {
+        "id":"nanath_90",
+		"message":"What?! He must be crazy!",
+        "replies":[
+            {
+                "text":"I don't have Troublemaker's ring yet.",
+				"nextPhraseID":"nanath_92",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_troublemaker",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I don't have the Ring of backstabbing yet.",
+				"nextPhraseID":"nanath_92",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_backstab",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I don't have the Villain's ring yet.",
+				"nextPhraseID":"nanath_92",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_villain",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I don't have the Tears of the Shadow yet.",
+				"nextPhraseID":"nanath_92",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"pot_shadowtear",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I have bought the 4 easier things already.",
+				"nextPhraseID":"nanath_100",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_troublemaker",
+						"value":1
+					},
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_backstab",
+						"value":1
+					},
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_villain",
+						"value":1
+					},
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"pot_shadowtear",
+						"value":1
+					}
+				]
+            }
+        ]
+    },
+    {
+        "id":"nanath_92",
+		"message":"Well, then go and find these thing. Hurry now!"
+    },
+    {
+        "id":"nanath_100",
+		"message":"Good, that's a start.",
+        "replies":[
+            {
+                "text":"I expect to be reimbursed of course.",
+				"nextPhraseID":"nanath_102"
+            },
+            {
+                "text":"I am glad you approve.",
+				"nextPhraseID":"nanath_110"
+            }
+        ]
+    },
+    {
+        "id":"nanath_102",
+		"message":"Umar will refund - only if you succeed.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"nanath_110"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":90
+            }
+        ]
+    },
+    {
+        "id":"nanath_110",
+		"message":"And Luthor's Ring?",
+        "replies":[
+            {
+                "text":"I am still looking for it.",
+				"nextPhraseID":"N"
+            },
+            {
+                "text":"I have no idea where to look any more",
+				"nextPhraseID":"nanath_120"
+            }
+        ]
+    },
+    {
+        "id":"nanath_120",
+		"message":"Looks like it ended up being kept somewhere dangerous.",
+        "replies":[
+            {
+                "text":"Seems so.",
+				"nextPhraseID":"nanath_122"
+            }
+        ]
+    },
+    {
+        "id":"nanath_122",
+		"message":"Then ... only one person may know: Sly Seraphina.",
+        "replies":[
+            {
+                "text":"On no! Not her! I refuse to talk to her.",
+				"nextPhraseID":"nanath_130"
+            }
+        ]
+    },
+    {
+        "id":"nanath_130",
+		"message":"You must. For the Guild!"
+    },
+    {
+        "id":"umar_tt",
+		"message":"Hello $playername, good that you are here. Please talk to Nanath, I am really busy right now.",
+        "replies":[
+			{
+				"text":"Do you have any tasks for me?",
+				"nextPhraseID":"umar_guild04_0",
+				"requires":[
+					{
+						"requireType":"factionScore",
+						"requireID":"ThievesGuild",
+						"value":30
+					},
+					{
+						"requireType":"questProgress",
+						"requireID":"Thieves04",
+						"value":10,
+						"negate":true
+					}
+				]
+			},
+			{
+                "text":"OK, I am talking to Nanath.",
+				"nextPhraseID":"X"
+            }
+        ]
+    },
+    {
         "id":"tt_start",
         "replies":[
             {
@@ -264,5 +539,133 @@
                 "value":10
             }
         ]
+    },
+    {
+        "id":"tt_talion_10",
+        "message":"Oh, that lovely spell! The Striking Spectacle Shadow Spell!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_12"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_12",
+        "message":"One of my specials! Just had an opportunity to use it again recently. Went awesome!",
+        "replies":[
+            {
+                "text":"... Why would you do that?  People can get hurt?",
+                "nextPhraseID":"tt_talion_20"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_20",
+        "message":"Nonsense! How can being more noticeable hurt? It's makes one stand out more, makes one more popular.",
+        "replies":[
+            {
+                "text":"Not if you want to be a spy or similar.",
+                "nextPhraseID":"tt_talion_30"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_30",
+        "message":"Why would these so-called spies approach you?",
+        "replies":[
+            {
+                "text":"I'm a kid. No one notices me ...",
+                "nextPhraseID":"tt_talion_40"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_40",
+        "message":"That's debatable in your case, but I see the point.",
+        "replies":[
+            {
+                "text":"Thanks! So, why did you do it?",
+                "nextPhraseID":"tt_talion_50"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_50",
+        "message":"For coins, of course! Why else?",
+        "replies":[
+            {
+                "text":"Well, what will it take to remove the spell?",
+                "nextPhraseID":"tt_talion_60"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_60",
+        "message":"Around 50,000 coins, of which a large portion will go back to the mysterious Lady Dameni, who had me do the spell. I would need to pacify her, else her toughs will kill me.",
+        "replies":[
+            {
+                "text":"50,000 coins! Hope the spies can reimburse me.",
+                "nextPhraseID":"tt_talion_62"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":70
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_62",
+        "message":"And a few more items ...",
+        "replies":[
+            {
+                "text":"What items?",
+                "nextPhraseID":"tt_talion_70"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_70",
+        "message":"Oh, just a few little things ...",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_72"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_72",
+        "message":"Villain's Ring, Troublemaker's Ring, Ring of backstabbing, Tears of the shadow. And most important, Luthor's Ring.",
+        "replies":[
+            {
+                "text":"You don't ask for much! Where do I find all that?",
+                "nextPhraseID":"tt_talion_80"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_80",
+        "message":"Check with your spy friends, they should know. All these rings form part of spy tradecraft.",
+        "replies":[
+            {
+                "text":"Luthor's Ring ...",
+                "nextPhraseID":"tt_talion_82"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":80
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_82",
+        "message":"Yes, this ring could be a little harder."
     }
 ]
