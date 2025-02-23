@@ -6,7 +6,7 @@
         "stages": [
             {
                 "progress": 10,
-                "logText": "I went to the Thieves’ Guild HQ in the basement in Fallhaven looking for things to do."
+                "logText": "I went to the Thieves' Guild HQ in the basement in Fallhaven looking for things to do."
             },
             {
                 "progress": 20,
@@ -16,13 +16,13 @@
             },
             {
                 "progress": 30,
-                "logText": "Since I had looted the Thieves’ Guild vault after killing Defy, Umar and Nanath threw me out. I cannot enter the basement again.",
+                "logText": "Since I had looted the Thieves' Guild vault after killing Defy, Umar and Nanath threw me out. I cannot enter the basement again.",
                 "rewardExperience": 1,
                 "finishesQuest": 1
             },
             {
                 "progress": 40,
-                "logText": "I met Nanath, who’s scared and upset, because someone had put a spell on all members of the Thieves’ Guild. This spell made all thieves noticeable. He asked me if I could help dispel the spell."
+                "logText": "I met Nanath, who's scared and upset, because someone had put a spell on all members of the Thieves' Guild. This spell made all thieves noticeable. He asked me if I could help dispel the spell."
             },
             {
                 "progress": 50,
@@ -46,19 +46,19 @@
             },
             {
                 "progress": 100,
-                "logText": "I went back to Nanath as I couldn’t find Luthor's Ring anywhere. He told me to seek out Sly Seraphina."
+                "logText": "I went back to Nanath as I couldn't find Luthor's Ring anywhere. He told me to seek out Sly Seraphina."
             },
             {
                 "progress": 110,
-                "logText": "Sly didn’t believe me. She told me to go away."
+                "logText": "Sly didn't believe me. She told me to go away."
             },
             {
                 "progress": 120,
-                "logText": "Nanath gave me Umar’s Signet Ring to convince Sly Seraphina."
+                "logText": "Nanath gave me Umar's Signet Ring to convince Sly Seraphina."
             },
             {
                 "progress": 130,
-                "logText": "Sly Seraphina said that Luthor’s Ring was to be found in the cave which Crackshot tried to open. The door was sealed by Umar and Sly to prevent monsters in that cave from devastating Dhayavar. The sealing was done by using Luthor’s items. She and Umar decided to separate them, and keep them separate."
+                "logText": "Sly Seraphina said that Luthor's Ring was to be found in the cave which Crackshot tried to open. The door was sealed by Umar and Sly to prevent monsters in that cave from devastating Dhayavar. The sealing was done by using Luthor's items. She and Umar decided to separate them, and keep them separate."
             },
             {
                 "progress": 140,
@@ -74,7 +74,7 @@
             },
             {
                 "progress": 170,
-                "logText": "Talion said, without the items he asked for, he couldn’t help. I had to find Sly Seraphina."
+                "logText": "Talion said, without the items he asked for, he couldn't help. I had to find Sly Seraphina."
             },
             {
                 "progress": 180,
@@ -90,7 +90,7 @@
             },
             {
                 "progress": 210,
-                "logText": "I have Luthor’s Key. Sly Seraphina has Luthor’s Key Ring. The door opened."
+                "logText": "I have Luthor's Key. Sly Seraphina has Luthor's Key Ring. The door opened."
             },
             {
                 "progress": 220,
@@ -110,7 +110,7 @@
             },
             {
                 "progress": 260,
-                "logText": "I searched the cave for Luthor’s Ring. I couldn’t find it."
+                "logText": "I searched the cave for Luthor's Ring. I couldn't find it."
             },
             {
                 "progress": 270,
