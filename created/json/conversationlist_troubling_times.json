@@ -7,7 +7,7 @@
                 "requires":[
                     {
                         "requireType":"questProgress",
-                        "requireID":"wanted_men",
+                        "requireID":"troubling_times",
                         "value":80
                     }
                 ]
@@ -17,7 +17,7 @@
                 "requires":[
                     {
                         "requireType":"questProgress",
-                        "requireID":"wanted_men",
+                        "requireID":"troubling_times",
                         "value":70
                     }
                 ]
@@ -241,7 +241,7 @@
 				"nextPhraseID":"nanath_80",
 				"requires":[
 					{
-						"requireType":"factionScore",
+						"requireType":"questProgress",
 						"requireID":"troubling_times",
 						"value":80,
 						"negate":true
@@ -253,7 +253,7 @@
 				"nextPhraseID":"nanath_80",
 				"requires":[
 					{
-						"requireType":"factionScore",
+						"requireType":"questProgress",
 						"requireID":"troubling_times",
 						"value":80
 					}
@@ -449,24 +449,11 @@
 		"message":"Hello $playername, good that you are here. Please talk to Nanath, I am really busy right now.",
         "replies":[
 			{
-				"text":"Do you have any tasks for me?",
-				"nextPhraseID":"umar_guild04_0",
-				"requires":[
-					{
-						"requireType":"factionScore",
-						"requireID":"ThievesGuild",
-						"value":30
-					},
-					{
-						"requireType":"questProgress",
-						"requireID":"Thieves04",
-						"value":10,
-						"negate":true
-					}
-				]
+				"text":"Wait ...",
+				"nextPhraseID":"umar_return_1"
 			},
 			{
-                "text":"OK, I am talking to Nanath.",
+                "text":"OK, I am looking for Nanath.",
 				"nextPhraseID":"X"
             }
         ]
@@ -619,7 +606,7 @@
     },
     {
         "id":"tt_talion_62",
-        "message":"And a few more items ...",
+        "message":"Also I need a few more items ...",
         "replies":[
             {
                 "text":"What items?",
@@ -629,7 +616,7 @@
     },
     {
         "id":"tt_talion_70",
-        "message":"Oh, just a few little things ...",
+        "message":"Oh, just a few little things, easy to get.",
         "replies":[
             {
                 "text":"N",
@@ -666,6 +653,6 @@
     },
     {
         "id":"tt_talion_82",
-        "message":"Yes, this ring could be a little harder."
+        "message":"Yes, this ring might be a little harder to find. I trust in you."
     }
 ]

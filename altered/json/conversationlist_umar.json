@@ -23,6 +23,22 @@
                 ]
             },
             {
+                "nextPhraseID":"umar_tt",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"wanted_men",
+                        "value":57
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"wanted_men",
+                        "value":70,
+						"negate":true
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"umar_return_1",
                 "requires":[
                     {
