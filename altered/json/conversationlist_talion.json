@@ -5,7 +5,7 @@
         "replies":[
             {
                 "text":"Do you know anything about the illness here in Loneford?",
-                "nextPhraseID":"talion_10",
+                "nextPhraseID":"talion_1",
                 "requires":[
                     {
                         "requireType":"questProgress",
@@ -42,7 +42,7 @@
                         "requireType":"questProgress",
                         "requireID":"troubling_times",
                         "value":70,
-						"negate":"true"
+                        "negate":true
                     }
                 ]
             }
