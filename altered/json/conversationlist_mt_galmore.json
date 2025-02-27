@@ -1,0 +1,81 @@
+[
+	{
+		"id":"thief_seraphina_81",
+		"message":"Do I know you?",
+		"replies":[
+			{
+				"text":"Oh, you want to play dumb? Umar will hear about this!",
+				"nextPhraseID":"X"
+			},
+			{
+				"text":"No time to joke - the Guild needs you. Umar ...",
+				"nextPhraseID":"tt_sly_10",
+				"requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"troubling_times",
+						"value":100
+					},
+					{
+						"requireType":"questProgress",
+						"requireID":"troubling_times",
+						"value":140,
+						"negate":true
+					}
+				]
+			}
+		]
+	},
+	{
+		"id":"thief_seraphina_bridge_fixed",
+		"message":"Please move along. There's nothing to see here.",
+		"switchToNPC":"thief_seraphina",
+		"replies":[
+			{
+				"text":"I've been wondering, do you have anything to sell?",
+				"nextPhraseID":"thief_seraphina_helmet_1",
+				"requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"sutdover_hidden",
+						"value":3,
+						"negate":true
+					},
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"armored_helmet",
+						"value":1,
+						"negate":true
+					},
+					{
+						"requireType":"wear",
+						"requireID":"armored_helmet",
+						"value":1,
+						"negate":true
+					}
+				]
+			},
+			{
+				"text":"Yes, ma'am.",
+				"nextPhraseID":"X"
+			},
+			{
+				"text":"No time to joke - the Guild needs you. Umar ...",
+				"nextPhraseID":"tt_sly_10",
+				"requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"troubling_times",
+						"value":100
+					},
+					{
+						"requireType":"questProgress",
+						"requireID":"troubling_times",
+						"value":140,
+						"negate":true
+					}
+				]
+			}
+		]
+	}
+]

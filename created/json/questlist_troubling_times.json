@@ -42,11 +42,15 @@
             },
             {
                 "progress": 90,
-                "logText": "Nanath told me Thieves Guild would give me 50,000 coins when I got the spell dispelled."
+                "logText": "Nanath told me Thieves Guild would give me the 50,000 coins back when I got the spell dispelled."
             },
             {
                 "progress": 100,
-                "logText": "I went back to Nanath as I couldn't find Luthor's Ring anywhere. He told me to seek out Sly Seraphina."
+                "logText": "I went back to Nanath as I couldn't find Luthor's Ring anywhere."
+            },
+            {
+                "progress": 105,
+                "logText": "He told me to seek out Sly Seraphina."
             },
             {
                 "progress": 110,
@@ -54,7 +58,7 @@
             },
             {
                 "progress": 120,
-                "logText": "Nanath gave me Umar's Signet Ring to convince Sly Seraphina."
+                "logText": "Nanath told me one of Umar's secret passwords to convince Sly Seraphina."
             },
             {
                 "progress": 130,

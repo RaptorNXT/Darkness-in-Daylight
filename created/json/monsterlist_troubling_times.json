@@ -1,7 +1,7 @@
 [
     {
         "id":"nanath",
-        "name":"nanath",
+        "name":"Nanath",
         "iconID":"monsters_newb_1:41",
         "monsterClass":"humanoid",
         "spawnGroup":"nanath",
