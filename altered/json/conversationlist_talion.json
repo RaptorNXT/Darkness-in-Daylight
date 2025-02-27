@@ -45,6 +45,40 @@
                         "negate":true
                     }
                 ]
+            },
+            {
+                "text":"Here I bring the things you've required for dispelling.",
+                "nextPhraseID":"tt_talion_64",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":80
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":280,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Here I bring the things you've required for dispelling.",
+                "nextPhraseID":"tt_talion_120",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":280
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":290,
+                        "negate":true
+                    }
+                ]
             }
         ]
     }

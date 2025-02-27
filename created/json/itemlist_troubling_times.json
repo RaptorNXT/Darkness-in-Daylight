@@ -1,0 +1,18 @@
+[
+    {
+        "id":"ring_luthor",
+        "iconID":"items_jewelry:0",
+        "name":"Luthor's Ring",
+        "displaytype":"quest",
+        "baseMarketCost":0,
+        "category":"ring",
+        "equipEffect":{
+            "addedConditions":[
+                {
+                    "condition":"life_drain",
+                    "magnitude":5
+                }
+            ]
+        }
+    }
+]
