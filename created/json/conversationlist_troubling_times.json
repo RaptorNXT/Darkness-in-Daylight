@@ -534,6 +534,12 @@
                         "requireID":"troubling_times",
                         "value":110
                     }
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":140,
+						"negate":true
+                    }
                 ]
             },
             {
@@ -1271,7 +1277,7 @@
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_56",
-				"text":"Why would Luthor’s Ring unleash evil?"
+				"text":"Why would Luthor's Ring unleash evil?"
 			}
 		]
 	},
@@ -1371,7 +1377,7 @@
 	},
     {
         "id":"tt_sly_74",
-		"message":"So, when we created that deep cave hideout for our most precious items, we never imagined that the cave held such terrible monsters. While we were exploring, they came and attacked us! (Shivers).",
+		"message":"So, when we created that deep cave hideout for our most precious items, we never imagined that the cave held such terrible monsters. While we were exploring, they came and attacked us!",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_76",
@@ -1393,7 +1399,7 @@
     {
         "id":"tt_sly_80",
 		"switchToNPC":"thief_seraphina",
-		"message":"We’re thieves, not warriors. We tried to escape from there. Lost a few members ...",
+		"message":"We're thieves, not warriors. We tried to escape from there. Lost a few members ...",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_82",
@@ -1404,7 +1410,7 @@
     {
         "id":"tt_sly_82",
 		"switchToNPC":"thief_seraphina",
-		"message":"Lost Luthor’s Ring in the cave in the scramble to get out.",
+		"message":"Lost Luthor's Ring in the cave in the scramble to get out.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_84",
@@ -1418,13 +1424,13 @@
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_90",
-				"text":"Using Luthor’s items?"
+				"text":"Using Luthor's items?"
 			}
 		]
 	},
     {
         "id":"tt_sly_90",
-		"message":"That’s right!",
+		"message":"That's right!",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_92",
@@ -1434,7 +1440,7 @@
 	},
     {
         "id":"tt_sly_92",
-		"message":"We used the magical Luthor’s Key and the magical Luthor’s Key Ring to seal it, by creating a magical, impermeable door.",
+		"message":"We used the magical Luthor's Key and the magical Luthor's Key Ring to seal it, by creating a magical, impermeable door.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_94",
@@ -1465,13 +1471,13 @@
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_100",
-				"text":"But we need to retrieve the Luthor’s Ring now."
+				"text":"But we need to retrieve the Luthor's Ring now."
 			}
 		]
 	},
     {
         "id":"tt_sly_100",
-		"message":"Even Umar’s current ask does not move me. Whatever ails the Guild - do find another way.",
+		"message":"Even Umar's current ask does not move me. Whatever ails the Guild - do find another way.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_110",
