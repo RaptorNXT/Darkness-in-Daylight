@@ -3,6 +3,16 @@
         "id":"nanath",
         "replies":[
             {
+                "nextPhraseID":"nanath_200",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":160
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"nanath_150",
                 "requires":[
                     {
@@ -171,6 +181,11 @@
             {
                 "rewardType":"questProgress",
                 "rewardID":"troubling_times",
+                "value":10
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
                 "value":40
             }
         ]
@@ -228,7 +243,26 @@
         "replies":[
             {
                 "text":"Talion, Shadow Priest, has put it on us after all - the Striking Spectacle Shadow Spell.",
-				"nextPhraseID":"nanath_72"
+				"nextPhraseID":"nanath_72",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":80,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I have been looking for the things for Talion.",
+				"nextPhraseID":"nanath_92",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":80
+                    }
+                ]
             }
         ]
     },
@@ -286,7 +320,17 @@
 		"message":"That's a lot, but it was to be expected. It's good that he doesn't want more.",
         "replies":[
             {
-                "text":"Well ... he also wants the following items: The Villain's Ring, Troublemaker's Ring, the Ring of backstabbing and the Tears of the shadow. And - most important - Luthor's Ring.",
+                "text":"Well ... he also wants the following items: The Villain's Ring, Troublemaker's Ring, the Ring of backstabbing and the Tears of the shadow.",
+				"nextPhraseID":"nanath_86"
+            }
+        ]
+    },
+    {
+        "id":"nanath_86",
+		"message":"Agreed.",
+        "replies":[
+            {
+                "text":"And - most important - Luthor's Ring.",
 				"nextPhraseID":"nanath_90"
             }
         ]
@@ -296,8 +340,18 @@
 		"message":"What?! He must be crazy!",
         "replies":[
             {
+                "text":"N",
+				"nextPhraseID":"nanath_92"
+            }
+        ]
+    },
+    {
+        "id":"nanath_92",
+		"message":"Do you have all of the items already?",
+        "replies":[
+            {
                 "text":"I don't have Troublemaker's ring yet.",
-				"nextPhraseID":"nanath_92",
+				"nextPhraseID":"nanath_94",
 				"requires":[
 					{
 						"requireType":"inventoryKeep",
@@ -309,7 +363,7 @@
             },
             {
                 "text":"I don't have the Ring of backstabbing yet.",
-				"nextPhraseID":"nanath_92",
+				"nextPhraseID":"nanath_94",
 				"requires":[
 					{
 						"requireType":"inventoryKeep",
@@ -321,7 +375,7 @@
             },
             {
                 "text":"I don't have the Villain's ring yet.",
-				"nextPhraseID":"nanath_92",
+				"nextPhraseID":"nanath_94",
 				"requires":[
 					{
 						"requireType":"inventoryKeep",
@@ -333,7 +387,7 @@
             },
             {
                 "text":"I don't have the Tears of the Shadow yet.",
-				"nextPhraseID":"nanath_92",
+				"nextPhraseID":"nanath_94",
 				"requires":[
 					{
 						"requireType":"inventoryKeep",
@@ -372,7 +426,7 @@
         ]
     },
     {
-        "id":"nanath_92",
+        "id":"nanath_94",
 		"message":"Well, then go and find these thing. Hurry now!"
     },
     {
@@ -385,7 +439,7 @@
             },
             {
                 "text":"I am glad you approve.",
-				"nextPhraseID":"nanath_110"
+				"nextPhraseID":"nanath_102"
             }
         ]
     },
@@ -411,8 +465,16 @@
 		"message":"And Luthor's Ring?",
         "replies":[
             {
-                "text":"I am still looking for it.",
-				"nextPhraseID":"nanath_120"
+                "text":"I am looking for it now.",
+				"nextPhraseID":"nanath_120",
+				"requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"troubling_times",
+						"value":100,
+						"negate":true
+					}
+				]
             },
             {
                 "text":"I have no idea where to look any more",
@@ -578,13 +640,30 @@
         "replies":[
             {
                 "text":"N",
+				"nextPhraseID":"nanath_181"
+            }
+        ]
+    },
+    {
+        "id":"nanath_181",
+		"message":"Anyway, we must find her. I know some of her usual hidings.",
+        "replies":[
+            {
+                "text":"N",
 				"nextPhraseID":"nanath_182"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":150
             }
         ]
     },
     {
         "id":"nanath_182",
-		"message":"Check with the Priest who put the curse. If that fails, check around areas east of Sullengard, or in the mountains above Blackwater, or maybe even the Arulir mountains or Remgard for her haunts.",
+		"message":"Check around areas east of Sullengard, or in the mountains above Blackwater, or maybe even the Arulir mountains or Remgard for her haunts.",
         "replies":[
             {
                 "text":"OK.",
@@ -610,6 +689,10 @@
         ]
     },
     {
+        "id":"nanath_200",
+		"message":"TODO nanath_200 ff"
+    },
+    {
         "id":"umar_tt",
 		"message":"Hello $playername, good that you are here. Please talk to Nanath, I am really busy right now.",
         "replies":[
@@ -632,507 +715,6 @@
                 "nextPhraseID":"jolnor_default_3"
             }
         ]
-    },
-    {
-        "id":"tt_start",
-        "replies":[
-            {
-                "nextPhraseID":"tt_start_1",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"troubling_times",
-                        "value":90
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"wanted_men",
-                        "value":100,
-						"negate":true
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"X",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"troubling_times",
-                        "value":10
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"X",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"wanted_men",
-                        "value":57,
-						"negate":true
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"wanted_men",
-                        "value":70,
-						"negate":true
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"wanted_men",
-                        "value":80,
-						"negate":true
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"tt_start_10"
-            }
-        ]
-    },
-    {
-        "id":"tt_start_1",
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"troubling_times",
-                "value":100
-            }
-        ]
-    },
-    {
-        "id":"tt_start_10",
-		"message":"You enter the HQ of the Thieves' Guild looking for things to do.",
-        "replies":[
-            {
-                "text":"I am sure that there is another job for me today.",
-				"nextPhraseID":"tt_start_20"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"spawnAll",
-                "rewardID":"nanath",
-                "mapName":"fallhaven_derelict2"
-            }
-        ]
-    },
-    {
-        "id":"tt_start_20",
-		"message":"Happy and expectant, you move on.",
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"troubling_times",
-                "value":10
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_10",
-        "message":"Oh, that lovely spell! The Striking Spectacle Shadow Spell!",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"tt_talion_12"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_12",
-        "message":"One of my specials! Just had an opportunity to use it again recently. Went awesome!",
-        "replies":[
-            {
-                "text":"... Why would you do that?  People can get hurt?",
-                "nextPhraseID":"tt_talion_20"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_20",
-        "message":"Nonsense! How can being more noticeable hurt? It's makes one stand out more, makes one more popular.",
-        "replies":[
-            {
-                "text":"Not if you want to be a spy or similar.",
-                "nextPhraseID":"tt_talion_30"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_30",
-        "message":"Why would these so-called spies approach you?",
-        "replies":[
-            {
-                "text":"I'm a kid. No one notices me ...",
-                "nextPhraseID":"tt_talion_40"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_40",
-        "message":"That's debatable in your case, but I see the point.",
-        "replies":[
-            {
-                "text":"Thanks! So, why did you do it?",
-                "nextPhraseID":"tt_talion_50"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_50",
-        "message":"For coins, of course! Why else?",
-        "replies":[
-            {
-                "text":"Well, what will it take to remove the spell?",
-                "nextPhraseID":"tt_talion_60"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_60",
-        "message":"Around 50,000 coins, of which a large portion will go back to the mysterious Lady Dameni, who had me do the spell. I would need to pacify her, else her toughs will kill me.",
-        "replies":[
-            {
-                "text":"50,000 coins! Hope the spies can reimburse me.",
-                "nextPhraseID":"tt_talion_62"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"troubling_times",
-                "value":70
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_62",
-        "message":"Also I need a few more items ...",
-        "replies":[
-            {
-                "text":"What items?",
-                "nextPhraseID":"tt_talion_70"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_64",
-        "message":"Indeed? We'll see. I need the following things:",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"tt_talion_72"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_70",
-        "message":"Oh, just a few little things, easy to get.",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"tt_talion_72"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_72",
-        "message":"Villain's Ring, Troublemaker's Ring, Ring of backstabbing, Tears of the shadow. And most important, Luthor's Ring. Together with 50000 gold.",
-        "replies":[
-            {
-                "text":"You don't ask for much! Where do I find all that?",
-                "nextPhraseID":"tt_talion_80"
-            },
-            {
-                "text":"I don't have Troublemaker's ring yet.",
-				"nextPhraseID":"tt_talion_74",
-				"requires":[
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"ring_troublemaker",
-						"value":1,
-						"negate":true
-					}
-				]
-            },
-            {
-                "text":"I don't have the Ring of backstabbing yet.",
-				"nextPhraseID":"tt_talion_74",
-				"requires":[
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"ring_backstab",
-						"value":1,
-						"negate":true
-					}
-				]
-            },
-            {
-                "text":"I don't have the Villain's ring yet.",
-				"nextPhraseID":"tt_talion_74",
-				"requires":[
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"ring_villain",
-						"value":1,
-						"negate":true
-					}
-				]
-            },
-            {
-                "text":"I don't have the Tears of the Shadow yet.",
-				"nextPhraseID":"tt_talion_74",
-				"requires":[
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"pot_shadowtear",
-						"value":1,
-						"negate":true
-					}
-				]
-            },
-            {
-                "text":"I don't have Luthor's ring yet.",
-				"nextPhraseID":"tt_talion_74",
-				"requires":[
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"ring_luthor",
-						"value":1,
-						"negate":true
-					}
-				]
-            },
-            {
-                "text":"I don't have the 50000 pieces of gold yet.",
-				"nextPhraseID":"tt_talion_74",
-				"requires":[
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"gold",
-						"value":50000,
-						"negate":true
-					}
-				]
-            },
-            {
-                "text":"I have bought the 4 easier rings already.",
-				"nextPhraseID":"tt_talion_76",
-				"requires":[
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"ring_troublemaker",
-						"value":1
-					},
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"ring_backstab",
-						"value":1
-					},
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"ring_villain",
-						"value":1
-					},
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"pot_shadowtear",
-						"value":1
-					}
-				]
-            },
-            {
-                "text":"Here's all you have asked for.",
-				"nextPhraseID":"tt_talion_100",
-				"requires":[
-					{
-						"requireType":"inventoryRemove",
-						"requireID":"ring_troublemaker",
-						"value":1
-					},
-					{
-						"requireType":"inventoryRemove",
-						"requireID":"ring_backstab",
-						"value":1
-					},
-					{
-						"requireType":"inventoryRemove",
-						"requireID":"ring_villain",
-						"value":1
-					},
-					{
-						"requireType":"inventoryRemove",
-						"requireID":"pot_shadowtear",
-						"value":1
-					},
-					{
-						"requireType":"inventoryRemove",
-						"requireID":"ring_luthor",
-						"value":1
-					},
-					{
-						"requireType":"inventoryRemove",
-						"requireID":"gold",
-						"value":50000
-					}
-				]
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"troubling_times",
-                "value":80
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_74",
-		"message":"Well, then go and find these thing. Hurry now!"
-    },
-    {
-        "id":"tt_talion_76",
-		"message":"Good, that's a start.",
-        "replies":[
-            {
-                "text":"Now I am going to find Luthor's ring.",
-				"nextPhraseID":"tt_talion_82"
-            },
-            {
-                "text":"I am glad you approve.",
-				"nextPhraseID":"X"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_80",
-        "message":"Check with your spy friends, they should know. All these rings form part of spy tradecraft.",
-        "replies":[
-            {
-                "text":"Luthor's Ring ...",
-                "nextPhraseID":"tt_talion_82",
-				"requires":[
-					{
-						"requireType":"inventoryKeep",
-						"requireID":"pot_shadowtear",
-						"value":1,
-						"negate":true
-					}
-				]
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_82",
-        "message":"Yes, this ring might be a little harder to find. I trust in you.",
-        "replies":[
-            {
-                "text":"Don't you have any idea where it could be?",
-                "nextPhraseID":"tt_talion_84"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_84",
-        "message":"No. Ask your thieve friends.",
-        "replies":[
-            {
-                "text":"But ...",
-                "nextPhraseID":"tt_talion_86"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_86",
-        "message":"I said no. Go now, child."
-    },
-    {
-        "id":"tt_talion_100",
-        "message":"Behold - Luthor's ring! And this much gold! I hadn't expected that you would manage so soon.",
-        "replies":[
-            {
-                "text":"Easy thing for me.",
-                "nextPhraseID":"tt_talion_110"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"troubling_times",
-                "value":280
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_110",
-        "message":"[mutteryng] With all that gold and rings I could start a new and wealthy life in Nor City. Hmm ...",
-        "replies":[
-            {
-                "text":"I can hear you!",
-                "nextPhraseID":"tt_talion_112"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_112",
-        "message":"Ah, well. Now it's time to keep my promise and dispell your friends.",
-        "replies":[
-            {
-                "text":"That sounds better.",
-                "nextPhraseID":"tt_talion_120"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_120",
-        "message":"[muttering strange words]",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"tt_talion_122"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_122",
-        "message":"[muttering more strange words]",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"tt_talion_124"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_124",
-        "message":"[muttering even more strange words]",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"tt_talion_130"
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_130",
-        "message":"Done. Go back to your friends, everything is like before now.",
-        "replies":[
-            {
-                "text":"Great! Thank you.",
-                "nextPhraseID":"tt_talion_132"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"troubling_times",
-                "value":290
-            }
-        ]
-    },
-    {
-        "id":"tt_talion_132",
-        "message":"[to himself] I hope."
     },
     {
         "id":"tt_sly_10",
@@ -1626,6 +1208,542 @@
             }
         ]
 	},
+    {
+        "id":"tt_start",
+        "replies":[
+            {
+                "nextPhraseID":"tt_start_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":90
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":100,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"wanted_men",
+                        "value":57,
+						"negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"wanted_men",
+                        "value":70,
+						"negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"wanted_men",
+                        "value":80,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_start_10"
+            }
+        ]
+    },
+    {
+        "id":"tt_start_1",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":100
+            }
+        ]
+    },
+    {
+        "id":"tt_start_10",
+		"message":"You enter the HQ of the Thieves' Guild looking for things to do.",
+        "replies":[
+            {
+                "text":"I am sure that there is another job for me today.",
+				"nextPhraseID":"tt_start_20"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"nanath",
+                "mapName":"fallhaven_derelict2"
+            }
+        ]
+    },
+    {
+        "id":"tt_start_20",
+		"message":"Happy and expectant, you move on.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":10
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_10",
+        "message":"Oh, that lovely spell! The Striking Spectacle Shadow Spell!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_12"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_12",
+        "message":"One of my specials! Just had an opportunity to use it again recently. Went awesome!",
+        "replies":[
+            {
+                "text":"... Why would you do that?  People can get hurt?",
+                "nextPhraseID":"tt_talion_20"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_20",
+        "message":"Nonsense! How can being more noticeable hurt? It's makes one stand out more, makes one more popular.",
+        "replies":[
+            {
+                "text":"Not if you want to be a thief or similar.",
+                "nextPhraseID":"tt_talion_30"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_30",
+        "message":"Why would these so-called thieves approach you?",
+        "replies":[
+            {
+                "text":"I'm a kid. No one notices me ...",
+                "nextPhraseID":"tt_talion_40"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_40",
+        "message":"That's debatable in your case, but I see the point.",
+        "replies":[
+            {
+                "text":"Thanks! So, why did you do it?",
+                "nextPhraseID":"tt_talion_50"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_50",
+        "message":"Because of the gold! What else?",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_52"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_52",
+        "message":"Of course I use it for the church ...",
+        "replies":[
+            {
+                "text":"Well, what will it take to remove the spell?",
+                "nextPhraseID":"tt_talion_60"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_60",
+        "message":"Around 50,000 coins, of which a large portion will go back to the mysterious Lady Dameni, who had me do the spell. I would need to pacify her, else her toughs will kill me.",
+        "replies":[
+            {
+                "text":"50,000 coins! Hope the guild can reimburse me.",
+                "nextPhraseID":"tt_talion_62"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":70
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_62",
+        "message":"Also I need a few more items ...",
+        "replies":[
+            {
+                "text":"What items?",
+                "nextPhraseID":"tt_talion_70"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_64",
+        "message":"Indeed? We'll see. I need the following things:",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_72"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_70",
+        "message":"Oh, just a few little things, easy to get.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_72"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_72",
+        "message":"Villain's ring, Troublemaker's ring, Ring of backstabbing, Tears of the Shadow potion. And most important, Luthor's Ring. Together with 50000 gold.",
+        "replies":[
+            {
+                "text":"You don't ask for much! Where do I find all that?",
+                "nextPhraseID":"tt_talion_80"
+            },
+            {
+                "text":"I don't have Troublemaker's ring yet.",
+				"nextPhraseID":"tt_talion_74",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_troublemaker",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I don't have the Ring of backstabbing yet.",
+				"nextPhraseID":"tt_talion_74",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_backstab",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I don't have the Villain's ring yet.",
+				"nextPhraseID":"tt_talion_74",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_villain",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I don't have the Tears of the Shadow yet.",
+				"nextPhraseID":"tt_talion_74",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"pot_shadowtear",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I don't have Luthor's ring yet.",
+				"nextPhraseID":"tt_talion_74",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_luthor",
+						"value":1,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I don't have the 50000 pieces of gold yet.",
+				"nextPhraseID":"tt_talion_74",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"gold",
+						"value":50000,
+						"negate":true
+					}
+				]
+            },
+            {
+                "text":"I have everthing besides Luthor's ring",
+				"nextPhraseID":"tt_talion_76",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_troublemaker",
+						"value":1
+					},
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_backstab",
+						"value":1
+					},
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"ring_villain",
+						"value":1
+					},
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"pot_shadowtear",
+						"value":1
+					},
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"gold",
+						"value":50000
+					}
+				]
+            },
+            {
+                "text":"Here's all you have asked for.",
+				"nextPhraseID":"tt_talion_100",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"ring_troublemaker",
+						"value":1
+					},
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"ring_backstab",
+						"value":1
+					},
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"ring_villain",
+						"value":1
+					},
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"pot_shadowtear",
+						"value":1
+					},
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"ring_luthor",
+						"value":1
+					},
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"gold",
+						"value":50000
+					}
+				]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":80
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_74",
+		"message":"Well, then go and find it.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_75"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_75",
+		"message":"By the way, don't come to me with polished rings. The counterspell works with the unmeddled ones only. Hurry now!"
+    },
+    {
+        "id":"tt_talion_76",
+		"message":"Good, that's a start.",
+        "replies":[
+            {
+                "text":"Now I am going to find Luthor's ring.",
+				"nextPhraseID":"tt_talion_82"
+            },
+            {
+                "text":"I am glad you approve.",
+				"nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_80",
+        "message":"Check with your thief friends, they should know. All these rings form part of your thievery business.",
+        "replies":[
+            {
+                "text":"Luthor's ring ...",
+                "nextPhraseID":"tt_talion_82",
+				"requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"pot_shadowtear",
+						"value":1,
+						"negate":true
+					}
+				]
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_82",
+        "message":"Yes, this ring might be a little harder to find. I trust in you.",
+        "replies":[
+            {
+                "text":"Don't you have any idea where it could be?",
+                "nextPhraseID":"tt_talion_84"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_84",
+        "message":"No. Ask your thieve friends.",
+        "replies":[
+            {
+                "text":"But ...",
+                "nextPhraseID":"tt_talion_86"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_86",
+        "message":"I said no. Go now, child."
+    },
+    {
+        "id":"tt_talion_90",
+        "message":"I don't know anybody with that name. Sorry.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"talion_0"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_100",
+        "message":"Behold - Luthor's ring! And this much gold! I hadn't expected that you would manage so soon.",
+        "replies":[
+            {
+                "text":"Easy thing for me.",
+                "nextPhraseID":"tt_talion_110"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":280
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_110",
+        "message":"[mutteryng] With all that gold and rings I could start a new and wealthy life in Nor City. Hmm ...",
+        "replies":[
+            {
+                "text":"You know that I can hear you?",
+                "nextPhraseID":"tt_talion_112"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_112",
+        "message":"Eh, well. Now it's time to keep my promise and dispell your friends.",
+        "replies":[
+            {
+                "text":"That sounds better.",
+                "nextPhraseID":"tt_talion_120"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_120",
+        "message":"[muttering strange words]",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_122"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_122",
+        "message":"[muttering more strange words]",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_124"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_124",
+        "message":"[muttering even more strange words]",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tt_talion_130"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_130",
+        "message":"Done. Go back to your friends, everything is like before again.",
+        "replies":[
+            {
+                "text":"Great! Thank you.",
+                "nextPhraseID":"tt_talion_132"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":290
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_132",
+        "message":"[to himself] I hope."
+    },
     {
         "id":"tt_thoronir_10",
         "message":"I don't understand ... What are you talking about?",

@@ -64,6 +64,23 @@
                 ]
             },
             {
+                "text":"Do you know the whereabouts of Sly Seraphina?",
+                "nextPhraseID":"tt_talion_100",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":140
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":180,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "text":"Here I bring the things you've required for dispelling.",
                 "nextPhraseID":"tt_talion_120",
                 "requires":[
