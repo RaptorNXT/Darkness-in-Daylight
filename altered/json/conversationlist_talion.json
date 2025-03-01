@@ -30,7 +30,7 @@
                 ]
             },
             {
-                "text":"I need some help. I am trying to figure out who put a Shadow Spell which makes a person noticeable.",
+                "text":"I need some help finding out who is responsable for casting a Shadow spell that causes a person to become noticeable.",
                 "nextPhraseID":"tt_talion_10",
                 "requires":[
                     {
@@ -65,7 +65,7 @@
             },
             {
                 "text":"Do you know the whereabouts of Sly Seraphina?",
-                "nextPhraseID":"tt_talion_100",
+                "nextPhraseID":"tt_talion_90",
                 "requires":[
                     {
                         "requireType":"questProgress",
@@ -81,8 +81,8 @@
                 ]
             },
             {
-                "text":"Here I bring the things you've required for dispelling.",
-                "nextPhraseID":"tt_talion_120",
+                "text":"I've brought you the things you had required for dispelling.",
+                "nextPhraseID":"tt_talion_100",
                 "requires":[
                     {
                         "requireType":"questProgress",

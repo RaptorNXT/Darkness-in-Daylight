@@ -1,4 +1,68 @@
 [
+    {
+        "id":"thief_seraphina_selector",
+        "switchToNPC":"thief_seraphina",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"thief_seraphina_script_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"sullengard_hidden",
+                        "value":36,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Thieves04",
+                        "value":75,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"thief_seraphina_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Thieves04",
+                        "value":75,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"sullengard_hidden",
+                        "value":38,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"thief_seraphina_bridge_fixed",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Thieves04",
+                        "value":75
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"thief_seraphina_80",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"sullengard_hidden",
+                        "value":38
+                    }
+                ]
+            }
+        ]
+    },
 	{
 		"id":"thief_seraphina_81",
 		"message":"Do I know you?",
@@ -60,7 +124,7 @@
 				"nextPhraseID":"X"
 			},
 			{
-				"text":"No time to joke - the Guild needs you. Umar ...",
+				"text":"The Guild needs you. Umar ...",
 				"nextPhraseID":"tt_sly_10",
 				"requires":[
 					{

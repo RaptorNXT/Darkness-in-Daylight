@@ -123,7 +123,7 @@
 		"message":"Hi there. I am Nanath. No need to introduce yourself, I know who you are, $playername.",
         "replies":[
             {
-                "text":"Oh. Hi Nanath. You are looking scared.",
+                "text":"Oh. Hi Nanath. You look scared.",
 				"nextPhraseID":"nanath_22"
             }
         ]
@@ -140,7 +140,7 @@
     },
     {
         "id":"nanath_24",
-		"message":"It makes us noticeable, and thus vulnerable to being caught - paralysing our honest bread and butter work.",
+		"message":"It makes us noticeable, and thus vulnerable to being caught - paralyzing our honest bread and butter work.",
         "replies":[
             {
                 "text":"Oh. Sounds awful.",
@@ -160,7 +160,7 @@
     },
     {
         "id":"nanath_28",
-		"message":"The thing is I don't know much about Shadow or any other so-called powers. My life has been being an honest thief, a score here, a score there - I don't tangle with the supernatural stuff.",
+		"message":"The thing is I don't know much about the Shadow or any other so-called powers. My life has been being an honest thief, a score here, a score there - I don't tangle with the supernatural stuff.",
         "replies":[
             {
                 "text":"N",
@@ -192,17 +192,27 @@
     },
     {
         "id":"nanath_32",
-		"message":"Really?  Like what?",
+		"message":"Really? Like what?",
         "replies":[
             {
-                "text":"Sorry, hush-hush stuff around Loneford and Vilegard.\nYou want my help?",
+                "text":"Sorry, hush-hush stuff around Loneford and Vilegard.",
+				"nextPhraseID":"nanath_34"
+            }
+        ]
+    },
+    {
+        "id":"nanath_34",
+		"message":"Of course.",
+        "replies":[
+            {
+                "text":"You want my help?",
 				"nextPhraseID":"nanath_40"
             }
         ]
     },
     {
         "id":"nanath_40",
-		"message":"Of course. First things first, how can we know the nature of the spell?",
+		"message":"First things first, how can we know the nature of the spell?",
         "replies":[
             {
                 "text":"N",
@@ -222,7 +232,7 @@
     },
     {
         "id":"nanath_44",
-		"message":"Maybe talking to a Shadow Priest may help?",
+		"message":"Maybe talking to a Shadow priest may help?",
         "replies":[
             {
                 "text":"I'll see what I can do.",
@@ -242,7 +252,7 @@
 		"message":"Oh, back again? I hope you bring good news.",
         "replies":[
             {
-                "text":"Talion, Shadow Priest, has put it on us after all - the Striking Spectacle Shadow Spell.",
+                "text":"Talion, Shadow priest, has put it on us after all - the Striking Spectacle Shadow spell.",
 				"nextPhraseID":"nanath_72",
                 "requires":[
                     {
@@ -310,7 +320,7 @@
 		"message":"What does he want in return?",
         "replies":[
             {
-                "text":"Lady Dameni paid him. Talion wants 50,000 coins to dispel us.",
+                "text":"Lady Dameni paid him. Talion wants 50000 coins to dispel us.",
 				"nextPhraseID":"nanath_84"
             }
         ]
@@ -320,7 +330,7 @@
 		"message":"That's a lot, but it was to be expected. It's good that he doesn't want more.",
         "replies":[
             {
-                "text":"Well ... he also wants the following items: The Villain's Ring, Troublemaker's Ring, the Ring of backstabbing and the Tears of the shadow.",
+                "text":"Well ... he also wants the following items: The Villain's ring, Troublemaker's ring, the ring of backstabbing and the Tears of the Shadow potion.",
 				"nextPhraseID":"nanath_86"
             }
         ]
@@ -330,7 +340,7 @@
 		"message":"Agreed.",
         "replies":[
             {
-                "text":"And - most important - Luthor's Ring.",
+                "text":"And - most important - Luthor's ring.",
 				"nextPhraseID":"nanath_90"
             }
         ]
@@ -362,7 +372,7 @@
 				]
             },
             {
-                "text":"I don't have the Ring of backstabbing yet.",
+                "text":"I don't have the ring of backstabbing yet.",
 				"nextPhraseID":"nanath_94",
 				"requires":[
 					{
@@ -462,11 +472,11 @@
     },
     {
         "id":"nanath_110",
-		"message":"And Luthor's Ring?",
+		"message":"And Luthor's ring?",
         "replies":[
             {
                 "text":"I am looking for it now.",
-				"nextPhraseID":"nanath_120",
+				"nextPhraseID":"X",
 				"requires":[
 					{
 						"requireType":"questProgress",
@@ -561,7 +571,7 @@
     },
     {
         "id":"nanath_150",
-		"message":"How progresses the task? Hope you've done it? We're in a soup here, kid. No time to dawdle.",
+		"message":"How progresses the task? Hope you've done it? We're in a pickle here, kid. No time to dawdle.",
         "replies":[
             {
                 "text":"Dawdle! Do it yourself if you know everything better!",
@@ -588,7 +598,7 @@
 		"message":"Tell me.",
         "replies":[
             {
-                "text":"Sly doesn't trust me.",
+                "text":"Seraphina doesn't trust me.",
 				"nextPhraseID":"nanath_170",
                 "requires":[
                     {
@@ -605,7 +615,7 @@
                 ]
             },
             {
-                "text":"Sly has disappeared. She's scared to unleash some monsters which she says Umar and her sealed up.",
+                "text":"Seraphina has disappeared. She's scared to unleash some monsters which she says Umar and her sealed up.",
 				"nextPhraseID":"nanath_180",
                 "requires":[
                     {
@@ -680,10 +690,10 @@
     },
     {
         "id":"nanath_184",
-		"message":"She must be found. For all means.",
+		"message":"She must be found. By all means.",
         "replies":[
             {
-                "text":"Yes Sir",
+                "text":"Yes, sir",
 				"nextPhraseID":"X"
             }
         ]
@@ -708,7 +718,7 @@
     },
     {
         "id":"tt_jolnor_10",
-        "message":"I don't understand ... What are you talking about?",
+        "message":"Excuse me? I don't know what you want from me.",
         "replies":[
             {
                 "text":"Never mind.",
@@ -774,7 +784,7 @@
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_32",
-				"text":"We have to remove the Striking Spectacle Shadow Spell from members of the Thieves' Guild. Or the Guild may as well cease to exist."
+				"text":"We have to remove the Striking Spectacle Shadow spell from members of the Thieves' Guild. Or the Guild may as well cease to exist."
 			}
 		]
 	},
@@ -805,7 +815,7 @@
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_42",
-				"text":"We have to remove the Striking Spectacle Shadow Spell from ..."
+				"text":"We have to remove the Striking Spectacle Shadow spell from ..."
 			}
 		]
 	},
@@ -855,17 +865,17 @@
 	},
     {
         "id":"tt_sly_54",
-		"message":"So Umar wants me to give you Luthor's Ring? And unleash evil on the Dhayavar?",
+		"message":"So Umar wants me to give you Luthor's ring? And unleash evil on the Dhayavar?",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_56",
-				"text":"Why would Luthor's Ring unleash evil?"
+				"text":"Why would that ring unleash evil?"
 			}
 		]
 	},
     {
         "id":"tt_sly_56",
-		"message":"Not the Ring itself. But the cave itself, if the door is opened.",
+		"message":"Not the ring itself. But the cave does, if the door is opened.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_58",
@@ -992,7 +1002,7 @@
     {
         "id":"tt_sly_82",
 		"switchToNPC":"thief_seraphina",
-		"message":"Lost Luthor's Ring in the cave in the scramble to get out.",
+		"message":"Lost Luthor's ring in the cave in the scramble to get out.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_84",
@@ -1002,7 +1012,7 @@
 	},
     {
         "id":"tt_sly_84",
-		"message":"Still, we managed to hold off the cave monsters, and managed to seal it.",
+		"message":"Still, we managed to hold off the cave monsters, and we managed to seal it.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_90",
@@ -1022,7 +1032,7 @@
 	},
     {
         "id":"tt_sly_92",
-		"message":"We used the magical Luthor's Key and the magical Luthor's Key Ring to seal it, by creating a magical, impermeable door.",
+		"message":"We used the magical Luthor's Key and the magical Luthor's key ring to seal it, by creating a magical, impermeable door.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_94",
@@ -1032,7 +1042,7 @@
 	},
     {
         "id":"tt_sly_94",
-		"message":"Umar and I decided to separate the Key and the Key Ring. And both of us we never meet, to keep that door permanently sealed.",
+		"message":"Umar and I decided to separate the key and the key ring. And both of us we never meet, to keep that door permanently sealed.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_96",
@@ -1053,7 +1063,7 @@
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_100",
-				"text":"But we need to retrieve the Luthor's Ring now."
+				"text":"But we need to retrieve Luthor's ring now."
 			}
 		]
 	},
@@ -1122,7 +1132,7 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_8"
+                "mapName":"lake_shore_road_9"
             }
         ]
 	},
@@ -1137,7 +1147,7 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_8"
+                "mapName":"lake_shore_road_9"
             }
         ]
 	},
@@ -1152,7 +1162,7 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_8"
+                "mapName":"lake_shore_road_9"
             }
         ]
 	},
@@ -1167,7 +1177,7 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_8"
+                "mapName":"lake_shore_road_9"
             }
         ]
 	},
@@ -1182,7 +1192,7 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_8"
+                "mapName":"lake_shore_road_9"
             }
         ]
 	},
@@ -1204,7 +1214,7 @@
             {
                 "rewardType":"removeSpawnArea",
                 "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_8"
+                "mapName":"lake_shore_road_9"
             }
         ]
 	},
@@ -1277,7 +1287,7 @@
     },
     {
         "id":"tt_start_10",
-		"message":"You enter the HQ of the Thieves' Guild looking for things to do.",
+		"message":"You enter the Thieves' Guild looking for things to do.",
         "replies":[
             {
                 "text":"I am sure that there is another job for me today.",
@@ -1305,7 +1315,7 @@
     },
     {
         "id":"tt_talion_10",
-        "message":"Oh, that lovely spell! The Striking Spectacle Shadow Spell!",
+        "message":"Oh, that lovely spell! The Striking Spectacle Shadow spell!",
         "replies":[
             {
                 "text":"N",
@@ -1318,7 +1328,7 @@
         "message":"One of my specials! Just had an opportunity to use it again recently. Went awesome!",
         "replies":[
             {
-                "text":"... Why would you do that?  People can get hurt?",
+                "text":"... Why would you do that? People can get hurt?",
                 "nextPhraseID":"tt_talion_20"
             }
         ]
@@ -1355,7 +1365,7 @@
     },
     {
         "id":"tt_talion_50",
-        "message":"Because of the gold! What else?",
+        "message":"Because of the gold! Why else?",
         "replies":[
             {
                 "text":"N",
@@ -1375,10 +1385,10 @@
     },
     {
         "id":"tt_talion_60",
-        "message":"Around 50,000 coins, of which a large portion will go back to the mysterious Lady Dameni, who had me do the spell. I would need to pacify her, else her toughs will kill me.",
+        "message":"Around 50000 coins, of which a large portion will go back to the mysterious Lady Dameni, who had me do the spell. I would need to pacify her, else her toughs will kill me.",
         "replies":[
             {
-                "text":"50,000 coins! Hope the guild can reimburse me.",
+                "text":"50000 coins! Hope the guild can reimburse me.",
                 "nextPhraseID":"tt_talion_62"
             }
         ],
@@ -1422,7 +1432,7 @@
     },
     {
         "id":"tt_talion_72",
-        "message":"Villain's ring, Troublemaker's ring, Ring of backstabbing, Tears of the Shadow potion. And most important, Luthor's Ring. Together with 50000 gold.",
+        "message":"Villain's ring, Troublemaker's ring, ring of backstabbing, tears of the Shadow potion. And most important, Luthor's ring. Together with 50000 gold.",
         "replies":[
             {
                 "text":"You don't ask for much! Where do I find all that?",
@@ -1437,11 +1447,16 @@
 						"requireID":"ring_troublemaker",
 						"value":1,
 						"negate":true
-					}
+					},
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":100
+                    }
 				]
             },
             {
-                "text":"I don't have the Ring of backstabbing yet.",
+                "text":"I don't have the ring of backstabbing yet.",
 				"nextPhraseID":"tt_talion_74",
 				"requires":[
 					{
@@ -1449,7 +1464,12 @@
 						"requireID":"ring_backstab",
 						"value":1,
 						"negate":true
-					}
+					},
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":100
+                    }
 				]
             },
             {
@@ -1461,7 +1481,12 @@
 						"requireID":"ring_villain",
 						"value":1,
 						"negate":true
-					}
+					},
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":100
+                    }
 				]
             },
             {
@@ -1473,7 +1498,12 @@
 						"requireID":"pot_shadowtear",
 						"value":1,
 						"negate":true
-					}
+					},
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":100
+                    }
 				]
             },
             {
@@ -1485,7 +1515,12 @@
 						"requireID":"ring_luthor",
 						"value":1,
 						"negate":true
-					}
+					},
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":100
+                    }
 				]
             },
             {
@@ -1745,8 +1780,12 @@
         "message":"[to himself] I hope."
     },
     {
+        "id":"tt_tahalendor_10",
+        "message":"Eh, what? Better ask Yolgen."
+    },
+    {
         "id":"tt_thoronir_10",
-        "message":"I don't understand ... What are you talking about?",
+        "message":"You must be confusing me.",
         "replies":[
             {
                 "text":"Never mind.",

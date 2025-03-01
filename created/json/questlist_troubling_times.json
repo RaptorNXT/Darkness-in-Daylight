@@ -6,7 +6,7 @@
         "stages": [
             {
                 "progress": 10,
-                "logText": "I went to the Thieves' Guild HQ in the basement in Fallhaven looking for things to do."
+                "logText": "I went to the Thieves' Guild in Fallhaven looking for things to do."
             },
             {
                 "progress": 20,
@@ -26,47 +26,47 @@
             },
             {
                 "progress": 50,
-                "logText": "Nanath told me to find out the Shadow Priest who had cast the spell on the Guild."
+                "logText": "Nanath told me to find out the Shadow priest who had cast the spell on the Guild."
             },
             {
                 "progress": 60,
-                "logText": "I set out interviewing Shadow Priests to find who had cast the spell."
+                "logText": "I set out interviewing Shadow priests to find who had cast the spell."
             },
             {
                 "progress": 70,
-                "logText": "Talion, Shadow Priest of Loneford, had cast the Striking Spectacle Shadow Spell on the Guild, on payment from Dameni, a mysterious lady leading a band of toughs"
+                "logText": "Talion, Shadow priest of Loneford, had cast the Striking Spectacle Shadow spell on the Guild, on payment from Dameni, a mysterious lady leading a band of toughs"
             },
             {
                 "progress": 80,
-                "logText": "Talion could dispel the spell, using a few items - Villain's Ring, Troublemaker's Ring, Ring of backstabbing, Tears of the shadow, Luthor's Ring.  He also wanted 50,000 coins"
+                "logText": "Talion could dispel the spell, using a few items - Villain's ring, Troublemaker's ring, ring of backstabbing, Tears of the Shadow potion, Luthor's ring.  He also wanted 50000 coins"
             },
             {
                 "progress": 90,
-                "logText": "Nanath told me Thieves Guild would give me the 50,000 coins back when I got the spell dispelled."
+                "logText": "Nanath told me Thieves' Guild would give me the 50000 coins back when I got the spell dispelled."
             },
             {
                 "progress": 100,
-                "logText": "I went back to Nanath as I couldn't find Luthor's Ring anywhere."
+                "logText": "I went back to Nanath as I couldn't find Luthor's ring anywhere."
             },
             {
                 "progress": 105,
-                "logText": "He told me to seek out Sly Seraphina."
+                "logText": "He told me to seek out Sly Seraphina near the Sutdover bridge."
             },
             {
                 "progress": 110,
-                "logText": "Sly didn't believe me. She told me to go away."
+                "logText": "Seraphina didn't believe me. She told me to go away."
             },
             {
                 "progress": 120,
-                "logText": "Nanath told me one of Umar's secret passwords to convince Sly Seraphina."
+                "logText": "Nanath told me one of Umar's secret passwords to convince Seraphina."
             },
             {
                 "progress": 130,
-                "logText": "Sly Seraphina said that Luthor's Ring was to be found in the cave which Crackshot tried to open. The door was sealed by Umar and Sly to prevent monsters in that cave from devastating Dhayavar. The sealing was done by using Luthor's items. She and Umar decided to separate them, and keep them separate."
+                "logText": "Sly Seraphina said that Luthor's ring was to be found in the cave which Crackshot tried to open. The door was sealed by Umar and Seraphina to prevent monsters in that cave from devastating Dhayavar. The sealing was done by using Luthor's items. She and Umar decided to separate them, and keep them separate."
             },
             {
                 "progress": 140,
-                "logText": "Sly Seraphina felt that the danger was too high with opening that door. So, she disappeared."
+                "logText": "Seraphina felt that the danger was too high with opening that door. So, she disappeared."
             },
             {
                 "progress": 150,
@@ -78,15 +78,15 @@
             },
             {
                 "progress": 170,
-                "logText": "Talion said, without the items he asked for, he couldn't help. I had to find Sly Seraphina."
+                "logText": "Talion said, without the items he asked for, he couldn't help. I had to find Seraphina."
             },
             {
                 "progress": 180,
-                "logText": "After beating the tough guys protecting Sly Seraphina, she agreed to help me as she thought I was strong enough to help her beat the monsters in the cave."
+                "logText": "After beating the tough guys protecting Seraphina, she agreed to help me as she thought I was strong enough to help her beat the monsters in the cave."
             },
             {
                 "progress": 190,
-                "logText": "(If Sly had cheated me earlier) She gave me back the money she had stolen from me earlier."
+                "logText": "Seraphina gave me back the money she had stolen from me earlier."
             },
             {
                 "progress": 200,
@@ -94,7 +94,7 @@
             },
             {
                 "progress": 210,
-                "logText": "I have Luthor's Key. Sly Seraphina has Luthor's Key Ring. The door opened."
+                "logText": "I have Luthor's key. Seraphina has Luthor's key ring. The door opened."
             },
             {
                 "progress": 220,
@@ -102,7 +102,7 @@
             },
             {
                 "progress": 230,
-                "logText": "Sly Seraphina got injured attacking one of the monsters."
+                "logText": "Seraphina got injured attacking one of the monsters."
             },
             {
                 "progress": 240,
@@ -110,19 +110,19 @@
             },
             {
                 "progress": 250,
-                "logText": "I healed Sly Seraphina using potions."
+                "logText": "I healed Seraphina using potions."
             },
             {
                 "progress": 260,
-                "logText": "I searched the cave for Luthor's Ring. I couldn't find it."
+                "logText": "I searched the cave for Luthor's ring. I couldn't find it."
             },
             {
                 "progress": 270,
-                "logText": "Sly had found the Ring. She gave it to me and told me to keep it safe. She returned to Sutdover bridge. I needed to go to Talion."
+                "logText": "Sly Seraphina had found the ring. She gave it to me and told me to keep it safe. She returned to Sutdover bridge. I needed to go to Talion."
             },
             {
                 "progress": 280,
-                "logText": "I gave 50,000 coins, Villain's Ring, Troublemaker's Ring, Ring of backstabbing, Tears of the shadow, and Luthor's Ring to Talion."
+                "logText": "I gave 50000 coins, Villain's ring, Troublemaker's ring, ring of backstabbing, tears of the Shadow potion, and Luthor's ring to Talion."
             },
             {
                 "progress": 290,
@@ -130,11 +130,11 @@
             },
             {
                 "progress": 300,
-                "logText": "Talion returned Villain's Ring. Troublemaker's Ring. Ring of backstabbing. Tears of the shadow, and sold me back Luthor's Ring."
+                "logText": "Talion returned Villain's ring, Troublemaker's ring, ring of backstabbing. Tears of the Shadow potion, and sold me back Luthor's ring."
             },
             {
                 "progress": 310,
-                "logText": "Nanath gave me 50,000 coins and a reward for a job well done."
+                "logText": "Nanath gave me 50000 coins and a reward for a job well done."
             },
             {
                 "progress": 320,
