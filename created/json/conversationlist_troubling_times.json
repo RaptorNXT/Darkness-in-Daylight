@@ -1131,8 +1131,8 @@
         "rewards":[
             {
                 "rewardType":"spawnAll",
-                "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_9"
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
             }
         ]
 	},
@@ -1146,8 +1146,8 @@
         "rewards":[
             {
                 "rewardType":"spawnAll",
-                "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_9"
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
             }
         ]
 	},
@@ -1161,8 +1161,8 @@
         "rewards":[
             {
                 "rewardType":"spawnAll",
-                "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_9"
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
             }
         ]
 	},
@@ -1176,8 +1176,8 @@
         "rewards":[
             {
                 "rewardType":"spawnAll",
-                "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_9"
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
             }
         ]
 	},
@@ -1191,8 +1191,8 @@
         "rewards":[
             {
                 "rewardType":"spawnAll",
-                "rewardID":"thief_seraphina",
-                "mapName":"lake_shore_road_9"
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
             }
         ]
 	},
@@ -1217,6 +1217,149 @@
                 "mapName":"lake_shore_road_9"
             }
         ]
+	},
+    {
+        "id":"tt_sly_200",
+		"message":"Ok, you're tough, even if not smart, kid.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_210",
+				"text":"Thank you?"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_210",
+		"message":"Like we talked, Luthor's Ring can be found in the secret room which Crackshot tried to open with Umar's key.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_212",
+				"text":"N"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_212",
+		"message":"However, it won't open without this enchanted Luthor's keyring, which dispels the spell on that door.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_220",
+				"text":"And the evil you mentioned are monsters, nothing more?"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_220",
+		"message":"Right, but when the door opens, and these strong monsters escape into the open, they will attack Dhayavar.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_222",
+				"text":"N"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_222",
+		"message":"Which reminds me: Another kid was looking for information to open it.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_240",
+				"text":"That kid, did he look just like me, but older?"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_240",
+		"message":"Come to think of it, he did.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_250",
+				"text":"[to self] What was Andor trying to do now?"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_250",
+		"message":"Looking at your strength, kid, you may just be able to beat those monsters.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_252",
+				"text":"Thanks again.",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"sullengard_hidden",
+                        "value":38
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":190,
+						"negate":true
+                    }
+                ]
+			},
+			{
+				"nextPhraseID":"tt_sly_254",
+				"text":"Thanks again.",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"sullengard_hidden",
+                        "value":38,
+						"negate":true
+                    }
+                ]
+			}
+		]
+	},
+    {
+        "id":"tt_sly_252",
+		"message":"By the way, here's your money back. 1000 gold pieces.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_254",
+				"text":"Hmm, OK."
+			}
+		],
+        "rewards":[
+            {
+                "rewardType":"give",
+                "rewardID":"gold",
+                "value":1000
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_254",
+		"message":"Meet me at the door to the secret room – I'll use Luthor's key ring there and you use Luthor's key.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_260",
+				"text":"OK."
+			}
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":195
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_seraphina2",
+                "mapName":"crackshot_hideout3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_300",
+		"message":"At last! Did you sleep all the way long?"
 	},
     {
         "id":"tt_start",
@@ -1687,6 +1830,53 @@
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"tt_talion_92"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_92",
+        "message":"Did you find the things I asked? Especially Luthor's Ring?",
+        "replies":[
+            {
+                "text":"That is hard to get. No one knows where it is.",
+                "nextPhraseID":"tt_talion_94"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_94",
+        "message":"Good thieves don't have to search for the things they want. They know where they are.",
+        "replies":[
+            {
+                "text":"Can't you cast the counterspell without the ring?",
+                "nextPhraseID":"tt_talion_96"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_96",
+        "message":"No ring - no help, sorry. Find it or your friends may have to retire and go into another honest business. He he!",
+        "replies":[
+            {
+                "text":"That is hard to get. No one knows where it is.",
+                "nextPhraseID":"tt_talion_98"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":170
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_98",
+        "message":"Find it or your friends may have to retire or go into another honest business. He he!",
+        "replies":[
+            {
+                "text":"Very funny.",
                 "nextPhraseID":"talion_0"
             }
         ]

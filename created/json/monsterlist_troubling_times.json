@@ -6,5 +6,21 @@
         "monsterClass":"humanoid",
         "spawnGroup":"nanath",
         "phraseID":"nanath"
+    },
+    {
+        "id":"tt_seraphina",
+        "name":"Sly Seraphina",
+        "iconID":"monsters_tometik7:38",
+        "monsterClass":"humanoid",
+        "spawnGroup":"tt_seraphina",
+        "phraseID":"tt_sly_200"
+    },
+    {
+        "id":"tt_seraphina2",
+        "name":"Sly Seraphina",
+        "iconID":"monsters_tometik7:38",
+        "monsterClass":"humanoid",
+        "spawnGroup":"tt_seraphina2",
+        "phraseID":"tt_sly_300"
     }
 ]
