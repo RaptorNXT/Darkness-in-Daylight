@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="19" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="17">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="19" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="18">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="160" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="320"/>
  </tileset>
@@ -185,17 +185,17 @@
    eJztlEsOgDAIREl33v8uXkFcu/JzAz9HMJYEEhypaVxr8uJghykbJCLiRDQpqDnQJZ8wZzaFne4yfaCRUfvkfM8MDdGp3+Qtj/XLmekz3X3Cmu5eg1096syo0efvslryFzfn+qK9L8oSDqhLoC/K+sqf9WfVZOFulKjZIYbdiIh8XXrmf53L/8NaBbX11PhqwHtLXCrML/g=
   </data>
  </layer>
- <layer id="2" name="Objects" width="19" height="19">
+ <layer id="2" name="Objects" width="19" height="19" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYKANuCPAwHCKCUIjg8tsxKmDgX9AuTdQNSAaxIeBx2y41V0H0slIav8D2YuA4n+A+AQThMYH0NX9ZcKvHgRA9pkRoQ4Z/BREmF/HBHEnjI+L/R6JjxMwE7Z7qhBx6mBgMYEwIwQKJRkYiiURNAjA/E9IHTpoAoo3SyJobGCpEEK+EYc6mP3TgWpnCKHKlYgzMJSJY1ePC+ByewvQnDZxwupI8eN3QeLUwcAOpDRzhp+BYQ0/YXXYwGImSN5YiqRuDxaz0NUtQko/IDYsLE8RkWcsmVDVTUOKq8diDAyGTJC8cQopb2wF0tuxsJHVhbJC5AYzAAD59VhF
   </data>
  </layer>
- <layer id="3" name="Objects_replace" width="19" height="19" visible="0">
+ <layer id="3" name="Objects_replace" width="19" height="19">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIKRCUpZB9oFhAEAU8cAew==
   </data>
  </layer>
- <layer id="4" name="Above" width="19" height="19">
+ <layer id="4" name="Above" width="19" height="19" visible="0">
   <data encoding="base64" compression="zlib">
    eJw7wcRAdfBYDDsbBPbzE6cOBD6L4VdzngSzQGKfgHgxE3Y16PpxqUMXu8MEcScIJ2PRg8yGqcNlFrI7i6FmfUKS/ySGqQ6fWejyuAA2dTCzFgmi0rgAPnUwszYJotK4AD51MLMOCaLSuAA+dYT8yCGEyqfUj8+RxOjtR2oAWpqFLW9gA9jUbUcrw7DlDVxuIDaPDCQAAMwQSkw=
   </data>
@@ -205,7 +205,7 @@
    eJxjYKAveCw2OMxaykRddaNgFIyCUUALAADZ4QNB
   </data>
  </layer>
- <layer id="6" name="Above_replace" width="19" height="19" visible="0">
+ <layer id="6" name="Above_replace" width="19" height="19">
   <data encoding="base64" compression="zlib">
    eJxjYKAvqGCnnlkdVDRrFIyCUTAKBiMAAFhFAQ8=
   </data>
@@ -215,7 +215,7 @@
    eJzVk1sKACAIBPcU3f9K3ajfCB+j9ZMgZLhTikrSHH+6Lv++672zF0c5GYvwO6zdztgyT0e0xAiLvmXVnOnPvkX3Fof0lfaL9qJao5fXnQkrL5vdiFPZ1deszm5XuLdOWQu+E7gV
   </data>
  </layer>
- <layer id="8" name="Walkable_replace" width="19" height="19" visible="0">
+ <layer id="8" name="Walkable_replace" width="19" height="19">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMFgBAAWkAAE=
   </data>
@@ -237,6 +237,12 @@
   <object id="5" name="guild03_hideout3_exit_select" type="script" x="288" y="544" width="32" height="32">
    <properties>
     <property name="when" value="enter"/>
+   </properties>
+  </object>
+  <object id="17" name="North" type="mapchange" x="288" y="64" width="32" height="32">
+   <properties>
+    <property name="map" value="crackshot_hideout4"/>
+    <property name="place" value="South"/>
    </properties>
   </object>
  </objectgroup>
@@ -262,9 +268,9 @@
   <object id="9" name="Object" type="key" x="288" y="32" width="32" height="64">
    <properties>
     <property name="phrase" value="guild03_hideout3_lock"/>
-    <property name="requireId" value="thieves_hidden"/>
+    <property name="requireId" value="troubling_times"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="70"/>
+    <property name="requireValue" value="210"/>
    </properties>
   </object>
  </objectgroup>
@@ -278,9 +284,9 @@
    <properties>
     <property name="Above" value="Above_replace"/>
     <property name="Walkable" value="Walkable_replace"/>
-    <property name="requireId" value="thieves_hidden"/>
+    <property name="requireId" value="troubling_times"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="70"/>
+    <property name="requireValue" value="210"/>
    </properties>
   </object>
  </objectgroup>

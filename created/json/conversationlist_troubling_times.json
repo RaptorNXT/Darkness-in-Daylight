@@ -1324,7 +1324,7 @@
 		],
         "rewards":[
             {
-                "rewardType":"give",
+                "rewardType":"giveItem",
                 "rewardID":"gold",
                 "value":1000
             }
@@ -1384,7 +1384,7 @@
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
-                        "requireID":"key_luthor",
+                        "requireID":"g03_luthor",
                         "value":1,
 						"negate":true
                     }
@@ -1396,7 +1396,7 @@
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
-                        "requireID":"key_luthor",
+                        "requireID":"g03_luthor",
                         "value":1
                     }
                 ]
@@ -1404,18 +1404,18 @@
 		]
 	},
     {
-        "id":"tt_sly2_14",
+        "id":"tt_sly2_12",
 		"switchToNPC":"none",
 		"message":"Seraphina stares at you in disbelief.",
 		"replies":[
 			{
-				"nextPhraseID":"tt_sly2_16",
+				"nextPhraseID":"tt_sly2_14",
 				"text":"Eh, I'm getting it, I'm running. Just a minute ..."
 			}
 		]
 	},
     {
-        "id":"tt_sly2_16",
+        "id":"tt_sly2_14",
 		"switchToNPC":"tt_seraphina2",
 		"message":"Don't you dare to come back without!"
 	},
@@ -1437,7 +1437,7 @@
             },
             {
                 "rewardType":"removeSpawnArea",
-                "rewardID":"tt_seraphina3",
+                "rewardID":"tt_seraphina2",
                 "mapName":"crackshot_hideout3"
             }
         ]
