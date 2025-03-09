@@ -32,6 +32,14 @@
         "phraseID":"tt_sly3"
     },
     {
+        "id":"tt_seraphina3b",
+        "name":"Sly Seraphina",
+        "iconID":"monsters_tometik7:38",
+        "monsterClass":"humanoid",
+        "spawnGroup":"tt_seraphina3b",
+        "phraseID":"tt_sly3"
+    },
+    {
         "id":"tt_seraphina4",
         "name":"Sly Seraphina",
         "iconID":"monsters_tometik7:38",

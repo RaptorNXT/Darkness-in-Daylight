@@ -1335,7 +1335,7 @@
 		"message":"Meet me at the door to the secret room and bring Luthor's key. With Luthor's gloves the door will open.",
 		"replies":[
 			{
-				"nextPhraseID":"tt_sly_260",
+				"nextPhraseID":"R",
 				"text":"OK."
 			}
 		],
@@ -1444,21 +1444,33 @@
 	},
     {
         "id":"tt_sly_attack0",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_attack0b"
+			}
+		],
         "rewards":[
             {
-                "rewardType":"deactivateMapObjectGroup",
-                "rewardID":"tt_sly_attack_ky1",
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina3b",
+                "mapName":"crackshot_hideout4"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack0b",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Hey kid, stay close behind me!",
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_seraphina3",
                 "mapName":"crackshot_hideout4"
             },
             {
                 "rewardType":"questProgress",
                 "rewardID":"troubling_times",
                 "value":220
-            },
-            {
-                "rewardType":"alignmentSet",
-                "rewardID":"tt_sly_attack1",
-                "value":0
             }
         ]
 	},
@@ -1471,7 +1483,7 @@
                     {
                         "requireType":"factionScoreEquals",
                         "requireID":"tt_sly_attack1",
-                        "value":3
+                        "value":5
                     }
                 ]
             },
@@ -1481,7 +1493,7 @@
                     {
                         "requireType":"factionScoreEquals",
                         "requireID":"tt_sly_attack1",
-                        "value":7
+                        "value":9
                     }
                 ]
             },
@@ -1491,7 +1503,7 @@
                     {
                         "requireType":"factionScoreEquals",
                         "requireID":"tt_sly_attack1",
-                        "value":15
+                        "value":17
                     }
                 ]
             },
@@ -1501,7 +1513,7 @@
                     {
                         "requireType":"factionScoreEquals",
                         "requireID":"tt_sly_attack1",
-                        "value":17
+                        "value":20
                     }
                 ]
             }
@@ -1642,7 +1654,17 @@
                     {
                         "requireType":"factionScoreEquals",
                         "requireID":"tt_sly_attack3",
-                        "value":7
+                        "value":9
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack3_20",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack3",
+                        "value":12
                     }
                 ]
             },
@@ -1678,7 +1700,7 @@
     {
         "id":"tt_sly_attack3_10",
 		"switchToNPC":"tt_seraphina3",
-		"message":"Ouch! That has hurt.",
+		"message":"Ha! Move, you lazy bones!",
         "rewards":[
             {
                 "rewardType":"alignmentChange",
@@ -1689,6 +1711,11 @@
 	},
     {
         "id":"tt_sly_attack3_20",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Ouch! That has hurted."
+	},
+    {
+        "id":"tt_sly_attack3_30",
 		"switchToNPC":"tt_seraphina3",
 		"message":"Aaargh!!"
 	},
@@ -1706,13 +1733,12 @@
                 "rewardType":"removeSpawnArea",
                 "rewardID":"tt_seraphina3",
                 "mapName":"crackshot_hideout4"
-            },
-            {
-                "rewardType":"alignmentChange",
-                "rewardID":"tt_sly_attack3",
-                "value":999
             }
         ]
+	},
+    {
+        "id":"tt_sly_attack3_90",
+		"message":"With her last bit of strength, Seraphina leapt past you and fell to the ground."
 	},
     {
         "id":"tt_sly_attack4",
@@ -1732,17 +1758,17 @@
         ]
 	},
     {
-        "id":"tt_sly_attack3_90",
-		"switchToNPC":"tt_seraphina3",
-		"message":"Pew, I am getting hot. Oh, now there are three of them ..."
-	},
-    {
         "id":"tt_sly3",
-		"message":"Don't push! I am trying to concentrate."
+		"message":"Don't push! I am busy fighting."
 	},
     {
         "id":"tt_sly4_key",
 		"message":"Help ... don't let me die here ..."
+	},
+    {
+        "id":"tt_sly4_key",
+		"switchToNPC":"tt_seraphina4",
+		"message":"[weak voice] ... help me ..."
 	},
     {
         "id":"tt_sly4",
@@ -1752,6 +1778,13 @@
                 "text":"You look terrible.",
 				"nextPhraseID":"tt_sly4_10"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"tt_sly_attack3",
+                "value":999
+            }
         ]
 	},
     {
@@ -1760,7 +1793,7 @@
         "replies":[
             {
                 "text":"Here, have a minor vial of health.",
-				"nextPhraseID":"tt_sly_4_12",
+				"nextPhraseID":"tt_sly4_12",
 				"requires":[
 					{
 						"requireType":"inventoryRemove",
@@ -1771,7 +1804,7 @@
             },
             {
                 "text":"Here, have a minor vial of health.",
-				"nextPhraseID":"tt_sly_4_12",
+				"nextPhraseID":"tt_sly4_12",
 				"requires":[
 					{
 						"requireType":"inventoryRemove",
@@ -1782,7 +1815,7 @@
             },
             {
                 "text":"Here, have a potion of health.",
-				"nextPhraseID":"tt_sly_4_20",
+				"nextPhraseID":"tt_sly4_20",
 				"requires":[
 					{
 						"requireType":"inventoryRemove",
@@ -1793,7 +1826,7 @@
             },
             {
                 "text":"Here, have a major potion of health.",
-				"nextPhraseID":"tt_sly_4_20",
+				"nextPhraseID":"tt_sly4_20",
 				"requires":[
 					{
 						"requireType":"inventoryRemove",
@@ -1804,7 +1837,7 @@
             },
             {
                 "text":"Here, have a major flask of health.",
-				"nextPhraseID":"tt_sly_4_20",
+				"nextPhraseID":"tt_sly4_20",
 				"requires":[
 					{
 						"requireType":"inventoryRemove",
@@ -1815,7 +1848,7 @@
             },
             {
                 "text":"Here, have a bonemeal potion.",
-				"nextPhraseID":"tt_sly_4_20",
+				"nextPhraseID":"tt_sly4_20",
 				"requires":[
 					{
 						"requireType":"inventoryRemove",
@@ -1826,7 +1859,7 @@
             },
             {
                 "text":"Here, have a bonemeal potion from Lodar.",
-				"nextPhraseID":"tt_sly_4_20",
+				"nextPhraseID":"tt_sly4_20",
 				"requires":[
 					{
 						"requireType":"inventoryRemove",
@@ -1849,11 +1882,11 @@
 	},
     {
         "id":"tt_sly4_20",
-		"message":"Ahh, that's good. Thank you, kid, ... $playername.",
+		"message":"Ahh, that's good. Thank you, kid ... $playername.",
         "replies":[
             {
                 "text":"[Embarressed] Sure thing.",
-				"nextPhraseID":"tt_sly_4_30"
+				"nextPhraseID":"tt_sly4_30"
             }
         ],
         "rewards":[
