@@ -1032,7 +1032,7 @@
 	},
     {
         "id":"tt_sly_92",
-		"message":"We used the magical Luthor's Key and the magical Luthor's key ring to seal it, by creating a magical, impermeable door.",
+		"message":"We used Luthor's Key and his gloves to seal it, by creating a magical, impermeable door.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_94",
@@ -1042,7 +1042,7 @@
 	},
     {
         "id":"tt_sly_94",
-		"message":"Umar and I decided to separate the key and the key ring. And both of us we never meet, to keep that door permanently sealed.",
+		"message":"Umar and I decided to separate the key and the gloves. And both of us we never meet, to keep that door permanently sealed.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_96",
@@ -1332,7 +1332,7 @@
 	},
     {
         "id":"tt_sly_254",
-		"message":"Meet me at the door to the secret room – I'll use Luthor's key ring there and you use Luthor's key.",
+		"message":"Meet me at the door to the secret room and bring Luthor's key. With Luthor's gloves the door will open.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_260",
@@ -1358,8 +1358,519 @@
         ]
 	},
     {
-        "id":"tt_sly_300",
-		"message":"At last! Did you sleep all the way long?"
+        "id":"tt_sly2",
+		"message":"At last! Did you sleep all the way long?",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly2_10",
+				"text":"Polite as ever."
+			}
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":200
+            }
+        ]
+	},
+    {
+        "id":"tt_sly2_10",
+		"message":"Give me Luthor's key now.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly2_12",
+				"text":"Haha, funny. I forgot to bring it.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"key_luthor",
+                        "value":1,
+						"negate":true
+                    }
+                ]
+			},
+			{
+				"nextPhraseID":"tt_sly2_20",
+				"text":"Here it is. Let's do it.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"key_luthor",
+                        "value":1
+                    }
+                ]
+			}
+		]
+	},
+    {
+        "id":"tt_sly2_14",
+		"switchToNPC":"none",
+		"message":"Seraphina stares at you in disbelief.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly2_16",
+				"text":"Eh, I'm getting it, I'm running. Just a minute ..."
+			}
+		]
+	},
+    {
+        "id":"tt_sly2_16",
+		"switchToNPC":"tt_seraphina2",
+		"message":"Don't you dare to come back without!"
+	},
+    {
+        "id":"tt_sly2_20",
+		"switchToNPC":"none",
+		"message":"Seraphina takes the key and easily unlocks the door. As quick as a weasel, she slips into the dark corridor.",
+		"replies":[
+			{
+				"nextPhraseID":"X",
+				"text":"I better follow immediately."
+			}
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":210
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina3",
+                "mapName":"crackshot_hideout3"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack0",
+        "rewards":[
+            {
+                "rewardType":"deactivateMapObjectGroup",
+                "rewardID":"tt_sly_attack_ky1",
+                "mapName":"crackshot_hideout4"
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":220
+            },
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"tt_sly_attack1",
+                "value":0
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack1",
+        "replies":[
+            {
+                "nextPhraseID":"tt_sly_attack1_10",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack1",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack1_20",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack1",
+                        "value":7
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack1_80",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack1",
+                        "value":15
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack1_90",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack1",
+                        "value":17
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"tt_sly_attack1",
+                "value":1
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack1_10",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Ha! Take that, skeleton!"
+	},
+    {
+        "id":"tt_sly_attack1_20",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Just one more hit ..."
+	},
+    {
+        "id":"tt_sly_attack1_80",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_monster1",
+                "mapName":"crackshot_hideout4"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack1_90",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Finished. Take a quick breather and then move on to the next one ..."
+	},
+    {
+        "id":"tt_sly_attack2",
+        "replies":[
+            {
+                "nextPhraseID":"tt_sly_attack2_10",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack2",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack2_20",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack2",
+                        "value":7
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack2_80",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack2",
+                        "value":15
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack2_90",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack2",
+                        "value":17
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"tt_sly_attack2",
+                "value":1
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack2_10",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Bang!!",
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"tt_sly_attack1",
+                "value":999
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack2_20",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Bang again!!"
+	},
+    {
+        "id":"tt_sly_attack2_80",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_monster2",
+                "mapName":"crackshot_hideout4"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack2_90",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Pew, it's getting warm. Oh, now there are three of them ..."
+	},
+    {
+        "id":"tt_sly_attack3",
+        "replies":[
+            {
+                "nextPhraseID":"tt_sly_attack3_10",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack3",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack3_20",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack3",
+                        "value":7
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack3_80",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack3",
+                        "value":15
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"tt_sly_attack3_90",
+                "requires":[
+                    {
+                        "requireType":"factionScoreEquals",
+                        "requireID":"tt_sly_attack3",
+                        "value":17
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"tt_sly_attack3",
+                "value":1
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack3_10",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Ouch! That has hurt.",
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"tt_sly_attack2",
+                "value":999
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack3_20",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Aaargh!!"
+	},
+    {
+        "id":"tt_sly_attack3_80",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Noo! I can't ... Help! I'm wounded.",
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_seraphina4",
+                "mapName":"crackshot_hideout4"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina3",
+                "mapName":"crackshot_hideout4"
+            },
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"tt_sly_attack3",
+                "value":999
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack4",
+		"switchToNPC":"tt_seraphina3",
+		"message":"I'm OK again! I'll help in the search.",
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_seraphina5",
+                "mapName":"crackshot_hideout4"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina4",
+                "mapName":"crackshot_hideout4"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_attack3_90",
+		"switchToNPC":"tt_seraphina3",
+		"message":"Pew, I am getting hot. Oh, now there are three of them ..."
+	},
+    {
+        "id":"tt_sly3",
+		"message":"Don't push! I am trying to concentrate."
+	},
+    {
+        "id":"tt_sly4_key",
+		"message":"Help ... don't let me die here ..."
+	},
+    {
+        "id":"tt_sly4",
+		"message":"Give me some healing potion ... please ...",
+        "replies":[
+            {
+                "text":"You look terrible.",
+				"nextPhraseID":"tt_sly4_10"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly4_10",
+		"message":"Nice compliment, kid. Ooouw ...",
+        "replies":[
+            {
+                "text":"Here, have a minor vial of health.",
+				"nextPhraseID":"tt_sly_4_12",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"health_minor",
+						"value":1
+					}
+				]
+            },
+            {
+                "text":"Here, have a minor vial of health.",
+				"nextPhraseID":"tt_sly_4_12",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"health_minor2",
+						"value":1
+					}
+				]
+            },
+            {
+                "text":"Here, have a potion of health.",
+				"nextPhraseID":"tt_sly_4_20",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"health",
+						"value":1
+					}
+				]
+            },
+            {
+                "text":"Here, have a major potion of health.",
+				"nextPhraseID":"tt_sly_4_20",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"health_major2",
+						"value":1
+					}
+				]
+            },
+            {
+                "text":"Here, have a major flask of health.",
+				"nextPhraseID":"tt_sly_4_20",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"health_major",
+						"value":1
+					}
+				]
+            },
+            {
+                "text":"Here, have a bonemeal potion.",
+				"nextPhraseID":"tt_sly_4_20",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"bonemeal_potion",
+						"value":1
+					}
+				]
+            },
+            {
+                "text":"Here, have a bonemeal potion from Lodar.",
+				"nextPhraseID":"tt_sly_4_20",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"pot_bm_lodar",
+						"value":1
+					}
+				]
+            }
+        ]
+	},
+    {
+        "id":"tt_sly4_12",
+		"message":"That didn't work. My wounds are too deep.",
+        "replies":[
+            {
+                "text":"Oh dear, wait, I'll get something different.",
+				"nextPhraseID":"tt_sly4"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly4_20",
+		"message":"Ahh, that's good. Thank you, kid, ... $playername.",
+        "replies":[
+            {
+                "text":"[Embarressed] Sure thing.",
+				"nextPhraseID":"tt_sly_4_30"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":250
+            }
+        ]
+	},
+    {
+        "id":"tt_sly4_30",
+		"message":"Now don't just stand around here. Look lively and find Luthor's ring."
+	},
+    {
+        "id":"tt_sly5",
+		"message":"Suits me, this place. Don't you think?"
 	},
     {
         "id":"tt_start",

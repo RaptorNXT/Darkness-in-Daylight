@@ -21,6 +21,87 @@
         "iconID":"monsters_tometik7:38",
         "monsterClass":"humanoid",
         "spawnGroup":"tt_seraphina2",
-        "phraseID":"tt_sly_300"
+        "phraseID":"tt_sly2"
+    },
+    {
+        "id":"tt_seraphina3",
+        "name":"Sly Seraphina",
+        "iconID":"monsters_tometik7:38",
+        "monsterClass":"humanoid",
+        "spawnGroup":"tt_seraphina3",
+        "phraseID":"tt_sly3"
+    },
+    {
+        "id":"tt_seraphina4",
+        "name":"Sly Seraphina",
+        "iconID":"monsters_tometik7:38",
+        "monsterClass":"humanoid",
+        "spawnGroup":"tt_seraphina4",
+        "phraseID":"tt_sly4"
+    },
+    {
+        "id":"tt_seraphina5",
+        "name":"Sly Seraphina",
+        "iconID":"monsters_tometik7:38",
+        "monsterClass":"humanoid",
+        "spawnGroup":"tt_seraphina5",
+        "phraseID":"tt_sly5"
+    },
+    {
+        "id":"tt_monster1",
+        "name":"Luthor's skeleton guard",
+        "iconID":"monsters_skeleton1:0",
+        "maxHP":52,
+        "maxAP":10,
+        "moveCost":10,
+        "monsterClass":"construct",
+        "attackDamage":{
+            "min":1,
+            "max":3
+        },
+        "spawnGroup":"tt_monster1",
+        "droplistID":"skeleton",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":40,
+        "damageResistance":1
+    },
+    {
+        "id":"tt_monster2",
+        "name":"Luthor's skeleton guard",
+        "iconID":"monsters_skeleton2:0",
+        "maxHP":52,
+        "maxAP":10,
+        "moveCost":10,
+        "monsterClass":"construct",
+        "attackDamage":{
+            "min":1,
+            "max":3
+        },
+        "spawnGroup":"tt_monster2",
+        "droplistID":"skeleton",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":40,
+        "damageResistance":1
+    },
+    {
+        "id":"tt_monster3",
+        "name":"Luthor's skeleton guard",
+        "iconID":"monsters_skeleton1:0",
+        "maxHP":52,
+        "maxAP":10,
+        "moveCost":10,
+        "monsterClass":"construct",
+        "attackDamage":{
+            "min":1,
+            "max":3
+        },
+        "spawnGroup":"tt_monster3",
+        "droplistID":"skeleton",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":40,
+        "damageResistance":1
     }
 ]
