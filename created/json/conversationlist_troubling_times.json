@@ -3,6 +3,36 @@
         "id":"nanath",
         "replies":[
             {
+                "nextPhraseID":"nanath_310",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":310
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"nanath_290",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":290
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"nanath_270",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":270
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"nanath_200",
                 "requires":[
                     {
@@ -700,7 +730,57 @@
     },
     {
         "id":"nanath_200",
-		"message":"TODO nanath_200 ff"
+		"message":"Good to hear."
+    },
+    {
+        "id":"nanath_270",
+		"message":"Then bring it to Talion. Quickly."
+    },
+    {
+        "id":"nanath_290",
+		"message":"You were obviously successful. We seem to be inconspicuous again.",
+        "replies":[
+            {
+                "text":"Yes. The search was a nice change.",
+				"nextPhraseID":"nanath_300"
+            }
+        ]
+    },
+    {
+        "id":"nanath_300",
+		"message":"Good job! Didn't think you could do it. But you did.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"nanath_302"
+            }
+        ]
+    },
+    {
+        "id":"nanath_302",
+		"message":"Umar asked me to reimburse you for your expenses. And something as a thank you. Here are 50000 shining pieces of gold.",
+        "replies":[
+            {
+                "text":"Thank you.",
+				"nextPhraseID":"nanath_310"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":310
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"gold",
+                "value":50000
+            }
+        ]
+    },
+    {
+        "id":"nanath_310",
+		"message":"Stay safe, kid."
     },
     {
         "id":"umar_tt",
@@ -1358,6 +1438,53 @@
         ]
 	},
     {
+        "id":"tt_sly_300",
+		"message":"What did you expect?",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_310",
+				"text":"Well ..."
+			}
+		]
+	},
+    {
+        "id":"tt_sly_310",
+		"message":"OK, I admit that you are quite fine.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_320",
+				"text":"Thank you!"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_320",
+		"message":"I would actually do a job with you again if the opportunity came up.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_330",
+				"text":"Yes, would be nice."
+			}
+		]
+	},
+    {
+        "id":"tt_sly_330",
+		"message":"And now buss off, kid. ... $playername.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_350",
+				"text":"N"
+			}
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":320
+            }
+        ]
+	},
+    {
         "id":"tt_sly2",
 		"message":"At last! Did you sleep all the way long?",
 		"replies":[
@@ -1446,7 +1573,15 @@
         "id":"tt_sly_attack0",
 		"replies":[
 			{
-				"nextPhraseID":"tt_sly_attack0b"
+				"nextPhraseID":"tt_sly_attack0b",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":220,
+						"negate":true
+                    }
+                ]
 			}
 		],
         "rewards":[
@@ -1460,7 +1595,7 @@
     {
         "id":"tt_sly_attack0b",
 		"switchToNPC":"tt_seraphina3",
-		"message":"Hey kid, stay close behind me!",
+		"message":"Hey kid, stay close behind me! It's going to be dangerous.",
         "rewards":[
             {
                 "rewardType":"spawnAll",
@@ -1659,7 +1794,7 @@
                 ]
             },
             {
-                "nextPhraseID":"tt_sly_attack3_20",
+                "nextPhraseID":"tt_sly_attack3_30",
                 "requires":[
                     {
                         "requireType":"factionScoreEquals",
@@ -1674,7 +1809,7 @@
                     {
                         "requireType":"factionScoreEquals",
                         "requireID":"tt_sly_attack3",
-                        "value":15
+                        "value":16
                     }
                 ]
             },
@@ -1712,7 +1847,7 @@
     {
         "id":"tt_sly_attack3_20",
 		"switchToNPC":"tt_seraphina3",
-		"message":"Ouch! That has hurted."
+		"message":"Ouch! That has hurt."
 	},
     {
         "id":"tt_sly_attack3_30",
@@ -1722,7 +1857,7 @@
     {
         "id":"tt_sly_attack3_80",
 		"switchToNPC":"tt_seraphina3",
-		"message":"Noo! I can't ... Help! I'm wounded.",
+		"message":"Noo! I can't ... Help! I'm wounded ... Run!",
         "rewards":[
             {
                 "rewardType":"spawnAll",
@@ -1742,7 +1877,23 @@
 	},
     {
         "id":"tt_sly_attack4",
-		"switchToNPC":"tt_seraphina3",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_attack4_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":255,
+						"negate":true
+                    }
+                ]
+			}
+		]
+	},
+    {
+        "id":"tt_sly_attack4_10",
+		"switchToNPC":"tt_seraphina5",
 		"message":"I'm OK again! I'll help in the search.",
         "rewards":[
             {
@@ -1754,6 +1905,15 @@
                 "rewardType":"removeSpawnArea",
                 "rewardID":"tt_seraphina4",
                 "mapName":"crackshot_hideout4"
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":255
+            },
+            {
+                "rewardType":"createTimer",
+                "rewardID":"tt_search"
             }
         ]
 	},
@@ -1772,10 +1932,14 @@
 	},
     {
         "id":"tt_sly4",
-		"message":"Give me some healing potion ... please ...",
+		"message":"It's good to ... see you are alive, kid.",
         "replies":[
             {
                 "text":"You look terrible.",
+				"nextPhraseID":"tt_sly4_2"
+            },
+            {
+                "text":"You are severely wounded.",
 				"nextPhraseID":"tt_sly4_10"
             }
         ],
@@ -1788,8 +1952,18 @@
         ]
 	},
     {
-        "id":"tt_sly4_10",
+        "id":"tt_sly4_2",
 		"message":"Nice compliment, kid. Ooouw ...",
+        "replies":[
+            {
+                "text":"You are severely wounded.",
+				"nextPhraseID":"tt_sly4_10"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly4_10",
+		"message":"Give me some healing potion ... please ...",
         "replies":[
             {
                 "text":"Here, have a minor vial of health.",
@@ -1867,6 +2041,17 @@
 						"value":1
 					}
 				]
+            },
+            {
+                "text":"Here, have this nice potion. [give her a poison potion]",
+				"nextPhraseID":"tt_sly4_22",
+				"requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"pot_poison_weak",
+						"value":1
+					}
+				]
             }
         ]
 	},
@@ -1876,7 +2061,7 @@
         "replies":[
             {
                 "text":"Oh dear, wait, I'll get something different.",
-				"nextPhraseID":"tt_sly4"
+				"nextPhraseID":"tt_sly4_10"
             }
         ]
 	},
@@ -1898,13 +2083,126 @@
         ]
 	},
     {
+        "id":"tt_sly4_22",
+		"message":"[Spits] What is this stuff?! Throw it away before you drink it yourself. It's rotten.",
+        "replies":[
+            {
+                "text":"So - sorry.",
+				"nextPhraseID":"tt_sly4_24"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":252
+            }
+        ]
+	},
+    {
+        "id":"tt_sly4_24",
+		"switchToNPC":"none",
+		"message":"You hope that she doesn't notice your guilty conscience.",
+        "replies":[
+            {
+                "text":"You are tough.",
+				"nextPhraseID":"tt_sly4_2"
+            }
+        ]
+	},
+    {
         "id":"tt_sly4_30",
-		"message":"Now don't just stand around here. Look lively and find Luthor's ring."
+		"message":"Now don't just stand around here. Look lively and find Luthor's ring.",
+        "replies":[
+            {
+                "text":"Ah, you're back to your old self already.",
+				"nextPhraseID":"X"
+            }
+        ]
 	},
     {
         "id":"tt_sly5",
-		"message":"Suits me, this place. Don't you think?"
-	},
+		"message":"Suits me, this place. Don't you think?",
+        "replies":[
+            {
+                "text":"Better help me search.",
+				"nextPhraseID":"tt_sly5_10",
+                "requires":[
+                    {
+                        "requireType":"timerElapsed",
+                        "requireID":"tt_search",
+                        "value":8
+                    }
+                ]
+            },
+            {
+                "text":"[Sarcastic] Truly royal.",
+				"nextPhraseID":"X"
+            }
+        ]
+ 	},
+    {
+        "id":"tt_sly5_10",
+		"message":"Are you looking for this ring here?",
+        "replies":[
+            {
+                "text":"What? And I've been searching here for hours!",
+				"nextPhraseID":"tt_sly5_20"
+            }
+        ]
+ 	},
+    {
+        "id":"tt_sly5_20",
+		"message":"You were so engrossed in the matter that I didn't want to disturb you.",
+        "replies":[
+            {
+			"text":"[Grumble]",
+				"nextPhraseID":"tt_sly5_30"
+            }
+        ]
+ 	},
+    {
+        "id":"tt_sly5_30",
+		"message":"There, catch it! Keep it safe and bring it to Talion. I'm off.",
+        "replies":[
+            {
+			"text":"Wait ...",
+				"nextPhraseID":"tt_sly5_32"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"thief_seraphina_spawn",
+                "mapName":"lake_shore_road_9"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"thief_seraphina",
+                "mapName":"lake_shore_road_9"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina5",
+                "mapName":"crackshot_hideout4"
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":270
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"ring_luthor",
+                "value":1
+            }
+        ]
+ 	},
+    {
+        "id":"tt_sly5_32",
+		"switchToNPC":"none",
+		"message":"A light breeze remained where Seraphina had just been sitting."
+ 	},
     {
         "id":"tt_start",
         "replies":[
@@ -2248,6 +2546,12 @@
 					},
 					{
 						"requireType":"inventoryKeep",
+						"requireID":"ring_luthor",
+						"value":1,
+						"negate":true
+					},
+					{
+						"requireType":"inventoryKeep",
 						"requireID":"gold",
 						"value":50000
 					}
@@ -2444,7 +2748,7 @@
     },
     {
         "id":"tt_talion_110",
-        "message":"[mutteryng] With all that gold and rings I could start a new and wealthy life in Nor City. Hmm ...",
+        "message":"[muttering] With all that gold and rings I could start a new and wealthy life in Nor City. Hmm ...",
         "replies":[
             {
                 "text":"You know that I can hear you?",
@@ -2506,6 +2810,69 @@
                 "rewardType":"questProgress",
                 "rewardID":"troubling_times",
                 "value":290
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_300",
+        "message":"What are you talking about?",
+        "replies":[
+            {
+                "text":"The rings. I need them back of course.",
+                "nextPhraseID":"tt_talion_310"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_310",
+        "message":"Oh no, you don't. And it's not possible.",
+        "replies":[
+            {
+                "text":"What?",
+                "nextPhraseID":"tt_talion_320"
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_320",
+        "message":"I said you don't need the rings. Also it's not possible ...",
+        "replies":[
+            {
+                "text":"OK, it was just a question. Bye.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"I'll show you what's possible ...",
+                "nextPhraseID":"tt_talion_330"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":290
+            }
+        ]
+    },
+    {
+        "id":"tt_talion_330",
+        "message":"Now here is Luthor's ring. It is the only one that was powerfull enough to survive the spell. The others are broken.",
+        "replies":[
+            {
+                "text":"Good, thanks.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"ring_luthor",
+                "value":1
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":300
             }
         ]
     },

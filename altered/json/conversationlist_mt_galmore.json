@@ -139,6 +139,23 @@
 						"negate":true
 					}
 				]
+			},
+			{
+				"text":"Hi Seraphina, you were away so quickly after you gave me Luthor's ring.",
+				"nextPhraseID":"tt_sly_300",
+				"requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"troubling_times",
+						"value":270
+					},
+					{
+						"requireType":"questProgress",
+						"requireID":"troubling_times",
+						"value":320,
+						"negate":true
+					}
+				]
 			}
 		]
 	}

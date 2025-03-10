@@ -117,6 +117,14 @@
                 "logText": "I healed Seraphina using potions."
             },
             {
+                "progress": 252,
+                "logText": "I tried to poison Seraphina, but she noticed in time."
+            },
+            {
+                "progress": 255,
+                "logText": "Seraphina already started the search for the ring."
+            },
+            {
                 "progress": 260,
                 "logText": "I searched the cave for Luthor's ring. I couldn't find it."
             },
@@ -138,13 +146,13 @@
             },
             {
                 "progress": 310,
-                "logText": "Nanath gave me 50000 coins and a reward for a job well done."
+                "logText": "Nanath gave me 50000 coins and a reward for a job well done.",
+                "rewardExperience": 15000,
+                "finishesQuest": 1
             },
             {
                 "progress": 320,
-                "logText": "Sly Seraphina was friendly to me – for now.",
-                "rewardExperience": 15000,
-                "finishesQuest": 1
+                "logText": "Sly Seraphina was friendly to me – for now."
             }
         ]
     }

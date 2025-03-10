@@ -73,9 +73,15 @@
                         "value":140
                     },
                     {
-                        "requireType":"questProgress",
+                        "requireType":"questLatestProgress",
                         "requireID":"troubling_times",
                         "value":180,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questLatestProgress",
+                        "requireID":"troubling_times",
+                        "value":200,
                         "negate":true
                     }
                 ]
@@ -93,6 +99,23 @@
                         "requireType":"questProgress",
                         "requireID":"troubling_times",
                         "value":290,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Haven't you forgotten something?",
+                "nextPhraseID":"tt_talion_300",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":290
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":300,
                         "negate":true
                     }
                 ]
