@@ -733,7 +733,17 @@
 		"message":"Good to hear."
     },
     {
-        "id":"nanath_270",
+        "id":"nanath_184",
+		"message":"Hi kid.",
+        "replies":[
+            {
+                "text":"I have got Luthor's ring.",
+				"nextPhraseID":"nanath_272"
+            }
+        ]
+    },
+    {
+        "id":"nanath_272",
 		"message":"Then bring it to Talion. Quickly."
     },
     {
@@ -1483,6 +1493,10 @@
                 "value":320
             }
         ]
+	},
+    {
+        "id":"tt_sly_350",
+		"message":"See you."
 	},
     {
         "id":"tt_sly2",
