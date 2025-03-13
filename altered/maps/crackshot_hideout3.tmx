@@ -185,7 +185,7 @@
    eJztlEsOgDAIREl33v8uXkFcu/JzAz9HMJYEEhypaVxr8uJghykbJCLiRDQpqDnQJZ8wZzaFne4yfaCRUfvkfM8MDdGp3+Qtj/XLmekz3X3Cmu5eg1096syo0efvslryFzfn+qK9L8oSDqhLoC/K+sqf9WfVZOFulKjZIYbdiIh8XXrmf53L/8NaBbX11PhqwHtLXCrML/g=
   </data>
  </layer>
- <layer id="2" name="Objects" width="19" height="19" visible="0">
+ <layer id="2" name="Objects" width="19" height="19">
   <data encoding="base64" compression="zlib">
    eJxjYKANuCPAwHCKCUIjg8tsxKmDgX9AuTdQNSAaxIeBx2y41V0H0slIav8D2YuA4n+A+AQThMYH0NX9ZcKvHgRA9pkRoQ4Z/BREmF/HBHEnjI+L/R6JjxMwE7Z7qhBx6mBgMYEwIwQKJRkYiiURNAjA/E9IHTpoAoo3SyJobGCpEEK+EYc6mP3TgWpnCKHKlYgzMJSJY1ePC+ByewvQnDZxwupI8eN3QeLUwcAOpDRzhp+BYQ0/YXXYwGImSN5YiqRuDxaz0NUtQko/IDYsLE8RkWcsmVDVTUOKq8diDAyGTJC8cQopb2wF0tuxsJHVhbJC5AYzAAD59VhF
   </data>
@@ -195,7 +195,7 @@
    eJxjYBgFo2AUjIKRCUpZB9oFhAEAU8cAew==
   </data>
  </layer>
- <layer id="4" name="Above" width="19" height="19" visible="0">
+ <layer id="4" name="Above" width="19" height="19">
   <data encoding="base64" compression="zlib">
    eJw7wcRAdfBYDDsbBPbzE6cOBD6L4VdzngSzQGKfgHgxE3Y16PpxqUMXu8MEcScIJ2PRg8yGqcNlFrI7i6FmfUKS/ySGqQ6fWejyuAA2dTCzFgmi0rgAPnUwszYJotK4AD51MLMOCaLSuAA+dYT8yCGEyqfUj8+RxOjtR2oAWpqFLW9gA9jUbUcrw7DlDVxuIDaPDCQAAMwQSkw=
   </data>
@@ -257,12 +257,6 @@
     <property name="spawngroup" value="crackshot_dying"/>
    </properties>
   </object>
-  <object id="8" name="tt_seraphina2" type="spawn" x="288" y="96" width="32" height="32">
-   <properties>
-    <property name="active" value="false"/>
-    <property name="spawngroup" value="tt_seraphina2"/>
-   </properties>
-  </object>
  </objectgroup>
  <objectgroup id="11" name="Keys">
   <object id="9" name="Object" type="key" x="288" y="32" width="32" height="64">
@@ -317,6 +311,14 @@
   <object id="16" name="g03_hideout_reb5" type="spawn" x="288" y="128" width="32" height="64">
    <properties>
     <property name="spawngroup" value="g03_crackshot"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Spawn2">
+  <object id="8" name="tt_seraphina2" type="spawn" x="288" y="96" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="tt_seraphina2"/>
    </properties>
   </object>
  </objectgroup>

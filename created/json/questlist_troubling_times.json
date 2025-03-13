@@ -82,7 +82,7 @@
             },
             {
                 "progress": 180,
-                "logText": "After beating the tough guys protecting Seraphina, she agreed to help me as she thought I was strong enough to help her beat the monsters in the cave."
+                "logText": "After beating the tough guys protecting Seraphina, she was convinced that I was strong enough to help her beat the monsters in the cave."
             },
             {
                 "progress": 190,
@@ -90,7 +90,7 @@
             },
             {
                 "progress": 195,
-                "logText": "Seraphina told me to meet her at the locked door in the cave where Crackshot was defeated."
+                "logText": "Seraphina agreed to help me and told me to meet her at the locked door in the cave where Crackshot was defeated."
             },
             {
                 "progress": 200,
@@ -138,7 +138,7 @@
             },
             {
                 "progress": 290,
-                "logText": "Talion used them to dispel the Spell."
+                "logText": "Talion used them to undo the Spell."
             },
             {
                 "progress": 300,
@@ -146,13 +146,13 @@
             },
             {
                 "progress": 310,
-                "logText": "Nanath gave me 50000 coins and a reward for a job well done.",
+                "logText": "Nanath gave me 75000 coins as a reward for a job well done.",
                 "rewardExperience": 15000,
                 "finishesQuest": 1
             },
             {
                 "progress": 320,
-                "logText": "Sly Seraphina was friendly to me – for now."
+                "logText": "Sly Seraphina was friendly to me - for now."
             }
         ]
     }

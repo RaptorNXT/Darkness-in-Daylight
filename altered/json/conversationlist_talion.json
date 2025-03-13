@@ -77,12 +77,6 @@
                         "requireID":"troubling_times",
                         "value":180,
                         "negate":true
-                    },
-                    {
-                        "requireType":"questLatestProgress",
-                        "requireID":"troubling_times",
-                        "value":200,
-                        "negate":true
                     }
                 ]
             },

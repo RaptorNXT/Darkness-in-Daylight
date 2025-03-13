@@ -23,7 +23,7 @@
                 ]
             },
             {
-                "nextPhraseID":"nanath_270",
+                "nextPhraseID":"nanath_200",
                 "requires":[
                     {
                         "requireType":"questProgress",
@@ -33,7 +33,7 @@
                 ]
             },
             {
-                "nextPhraseID":"nanath_200",
+                "nextPhraseID":"nanath_190",
                 "requires":[
                     {
                         "requireType":"questProgress",
@@ -78,7 +78,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"wanted_men",
-                        "value":80
+                        "value":77
                     }
                 ]
             },
@@ -729,11 +729,17 @@
         ]
     },
     {
-        "id":"nanath_200",
-		"message":"Good to hear."
+        "id":"nanath_190",
+		"message":"Have you found Seraphina yet?",
+        "replies":[
+            {
+                "text":"No.",
+				"nextPhraseID":"nanath_182"
+            }
+        ]
     },
     {
-        "id":"nanath_184",
+        "id":"nanath_200",
 		"message":"Hi kid.",
         "replies":[
             {
@@ -768,7 +774,7 @@
     },
     {
         "id":"nanath_302",
-		"message":"Umar asked me to reimburse you for your expenses. And something as a thank you. Here are 50000 shining pieces of gold.",
+		"message":"Umar asked me to reimburse you for your expenses. And something as a thank you. So here are 75000 shining pieces of gold.",
         "replies":[
             {
                 "text":"Thank you.",
@@ -784,7 +790,7 @@
             {
                 "rewardType":"giveItem",
                 "rewardID":"gold",
-                "value":50000
+                "value":75000
             }
         ]
     },
@@ -1223,6 +1229,11 @@
                 "rewardType":"spawnAll",
                 "rewardID":"tt_seraphina",
                 "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_guys",
+                "mapName":"sullengard3"
             }
         ]
 	},
@@ -1237,6 +1248,11 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_guys",
                 "mapName":"sullengard3"
             }
         ]
@@ -1253,6 +1269,11 @@
                 "rewardType":"spawnAll",
                 "rewardID":"tt_seraphina",
                 "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_guys",
+                "mapName":"sullengard3"
             }
         ]
 	},
@@ -1268,6 +1289,11 @@
                 "rewardType":"spawnAll",
                 "rewardID":"tt_seraphina",
                 "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_guys",
+                "mapName":"sullengard3"
             }
         ]
 	},
@@ -1282,6 +1308,11 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"tt_guys",
                 "mapName":"sullengard3"
             }
         ]
@@ -1310,17 +1341,52 @@
 	},
     {
         "id":"tt_sly_200",
-		"message":"Ok, you're tough, even if not smart, kid.",
 		"replies":[
 			{
-				"nextPhraseID":"tt_sly_210",
-				"text":"Thank you?"
+				"nextPhraseID":"tt_sly_202",
+				"requires":[
+					{
+						"requireType":"killedMonster",
+						"requireID":"tt_guys",
+						"value":5,
+						"negate":true
+					}
+				]
+			},
+			{
+				"nextPhraseID":"tt_sly_210"
 			}
 		]
 	},
     {
+        "id":"tt_sly_202",
+		"message":"Watch out, kid. Behind you!"
+	},
+    {
         "id":"tt_sly_210",
-		"message":"Like we talked, Luthor's Ring can be found in the secret room which Crackshot tried to open with Umar's key.",
+		"message":"Ok, you're tough, even if not smart, kid.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_211",
+				"text":"Thank you?"
+			}
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":180
+            },
+            {
+                "rewardType":"deactivateSpawnArea",
+                "rewardID":"tt_guys",
+                "mapName":"sullengard3"
+            }
+        ]
+	},
+    {
+        "id":"tt_sly_211",
+		"message":"Smart enough to find me, and tough enough to beat my friends.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_212",
@@ -1330,17 +1396,37 @@
 	},
     {
         "id":"tt_sly_212",
-		"message":"However, it won't open without this enchanted Luthor's keyring, which dispels the spell on that door.",
+		"message":"Like we talked, Luthor's Ring can be found in the secret room which Crackshot tried to open with Luthor's key from Umar.",
 		"replies":[
 			{
-				"nextPhraseID":"tt_sly_220",
+				"nextPhraseID":"tt_sly_214",
+				"text":"N"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_214",
+		"message":"However, it can only be opened if you also wear Luthor's gloves, which breaks the spell on the door.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_216",
 				"text":"And the evil you mentioned are monsters, nothing more?"
 			}
 		]
 	},
     {
+        "id":"tt_sly_216",
+		"message":"In fact, I didn't take the time to look at them more closely. But they seemed terrible and deadly to me.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_220",
+				"text":"N"
+			}
+		]
+	},
+    {
         "id":"tt_sly_220",
-		"message":"Right, but when the door opens, and these strong monsters escape into the open, they will attack Dhayavar.",
+		"message":"When the door opens, and these strong monsters escape into the open, they will attack Dhayavar, which we must avoid at all costs.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_222",
@@ -1370,7 +1456,7 @@
 	},
     {
         "id":"tt_sly_250",
-		"message":"Looking at your strength, kid, you may just be able to beat those monsters.",
+		"message":"Looking at your strength, kid, you may just be able to beat those monsters. We might give it a try.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_252",
@@ -1414,6 +1500,11 @@
 		],
         "rewards":[
             {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":190
+            },
+            {
                 "rewardType":"giveItem",
                 "rewardID":"gold",
                 "value":1000
@@ -1422,7 +1513,7 @@
 	},
     {
         "id":"tt_sly_254",
-		"message":"Meet me at the door to the secret room and bring Luthor's key. With Luthor's gloves the door will open.",
+		"message":"Meet me at the door to the secret room and bring Luthor's key. Together with Luthor's gloves the door will open.",
 		"replies":[
 			{
 				"nextPhraseID":"R",
@@ -1443,6 +1534,51 @@
             {
                 "rewardType":"removeSpawnArea",
                 "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_guys",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_guys",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_guys",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_guys",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_seraphina",
+                "mapName":"sullengard3"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"tt_guys",
                 "mapName":"sullengard3"
             }
         ]
@@ -1479,7 +1615,7 @@
 	},
     {
         "id":"tt_sly_330",
-		"message":"And now buss off, kid. ... $playername.",
+		"message":"And now buzz off, kid. ... $playername.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_350",
@@ -1698,7 +1834,17 @@
     {
         "id":"tt_sly_attack1_90",
 		"switchToNPC":"tt_seraphina3",
-		"message":"Finished. Take a quick breather and then move on to the next one ..."
+		"message":"Finished. Take a quick breather and then move on to the next one ...",
+		"replies":[
+			{
+				"text":"N",
+				"nextPhraseID":"tt_sly_attack1_92"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_attack1_92",
+		"message":"And keep staying close behind me!"
 	},
     {
         "id":"tt_sly_attack2",
@@ -1782,7 +1928,17 @@
     {
         "id":"tt_sly_attack2_90",
 		"switchToNPC":"tt_seraphina3",
-		"message":"Pew, it's getting warm. Oh, now there are three of them ..."
+		"message":"Pew, it's getting warm. Oh, now there are three of them ...",
+		"replies":[
+			{
+				"text":"N",
+				"nextPhraseID":"tt_sly_attack2_92"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_attack2_92",
+		"message":"Stay close to me!"
 	},
     {
         "id":"tt_sly_attack3",
@@ -1872,6 +2028,12 @@
         "id":"tt_sly_attack3_80",
 		"switchToNPC":"tt_seraphina3",
 		"message":"Noo! I can't ... Help! I'm wounded ... Run!",
+		"replies":[
+			{
+				"text":"N",
+				"nextPhraseID":"tt_sly_attack3_90"
+			}
+		],
         "rewards":[
             {
                 "rewardType":"spawnAll",
@@ -1887,7 +2049,14 @@
 	},
     {
         "id":"tt_sly_attack3_90",
-		"message":"With her last bit of strength, Seraphina leapt past you and fell to the ground."
+		"message":"With her last bit of strength, Seraphina leapt past you and fell to the ground.",
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"tt_sly_attack3",
+                "value":1
+            }
+        ]
 	},
     {
         "id":"tt_sly_attack4",
@@ -1921,6 +2090,11 @@
                 "mapName":"crackshot_hideout4"
             },
             {
+                "rewardType":"deactivateSpawnArea",
+                "rewardID":"tt_monster3",
+                "mapName":"crackshot_hideout4"
+            },
+            {
                 "rewardType":"questProgress",
                 "rewardID":"troubling_times",
                 "value":255
@@ -1933,7 +2107,7 @@
 	},
     {
         "id":"tt_sly3",
-		"message":"Don't push! I am busy fighting."
+		"message":"Don't push me. I need to concentrate."
 	},
     {
         "id":"tt_sly4_key",
@@ -2674,7 +2848,7 @@
     },
     {
         "id":"tt_talion_84",
-        "message":"No. Ask your thieve friends.",
+        "message":"No. Ask your thief friends.",
         "replies":[
             {
                 "text":"But ...",
@@ -2718,10 +2892,10 @@
     },
     {
         "id":"tt_talion_96",
-        "message":"No ring - no help, sorry. Find it or your friends may have to retire and go into another honest business. He he!",
+        "message":"No ring - no help, sorry.",
         "replies":[
             {
-                "text":"That is hard to get. No one knows where it is.",
+                "text":"N",
                 "nextPhraseID":"tt_talion_98"
             }
         ],
@@ -2870,7 +3044,7 @@
     },
     {
         "id":"tt_talion_330",
-        "message":"Now here is Luthor's ring. It is the only one that was powerfull enough to survive the spell. The others are broken.",
+        "message":"[Hasty] Now here is Luthor's ring. It is the only one that was powerfull enough to survive the spell. The others are broken.",
         "replies":[
             {
                 "text":"Good, thanks.",
