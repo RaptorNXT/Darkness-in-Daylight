@@ -18,6 +18,24 @@
     },
     {
         "id":"fallhaven_tunnel3",
-        "message":"Looks like the tunnel isn't quite finished yet. Typical troublemaker - can't finish anything."
+        "message":"Looks like the tunnel isn't quite finished yet.",
+        "replies":[
+            {
+                "text":"Typical Troublemaker - can't finish anything.",
+				"nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Thieves02",
+                        "value":45,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"So I have to go back the way I came.",
+				"nextPhraseID":"X"
+            }
+        ]
     }
 ]

@@ -744,9 +744,86 @@
         "replies":[
             {
                 "text":"No.",
-				"nextPhraseID":"nanath_182"
+				"nextPhraseID":"nanath_182",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":180,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Yes. She told me I would need Luthor's key.",
+				"nextPhraseID":"nanath_192",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":180
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":192
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":193,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Yes. She told me I would need Luthor's key.",
+				"nextPhraseID":"nanath_193",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"troubling_times",
+                        "value":193
+                    }
+                ]
             }
         ]
+    },
+    {
+        "id":"nanath_192",
+		"message":"I already thought so and asked it from Umar. Here you have it, handle it carefully.",
+        "replies":[
+            {
+                "text":"Of course.",
+				"nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":193
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"key_luthor",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"nanath_193",
+		"message":"I have given it to you already, forgotten?",
+        "replies":[
+            {
+                "text":"Oh, right. I'm ashamed of myself for trying to trick you.",
+				"nextPhraseID":"nanath_194"
+            }
+        ]
+    },
+    {
+        "id":"nanath_194",
+		"message":"I truly hope you are."
     },
     {
         "id":"nanath_200",
@@ -838,7 +915,7 @@
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_12",
-				"text":"Oh well. I am nothing. You don't see me."
+				"text":"Oh well: I am nothing. You don't see me."
 			}
 		]
 	},
@@ -851,8 +928,18 @@
 				"text":"You are right."
 			},
 			{
-				"nextPhraseID":"tt_sly_20",
+				"nextPhraseID":"tt_sly_14",
 				"text":"I'm not a little child anymore!"
+			}
+		]
+	},
+    {
+        "id":"tt_sly_14",
+		"message":"Then stop stomping on the ground.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_20",
+				"text":"N"
 			}
 		]
 	},
@@ -971,7 +1058,7 @@
 	},
     {
         "id":"tt_sly_54",
-		"message":"So Umar wants me to give you Luthor's ring? And unleash evil on the Dhayavar?",
+		"message":"All right. Umar wants me to give you Luthor's ring? And unleash evil on the Dhayavar?",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_56",
@@ -1409,14 +1496,31 @@
 		"message":"Like we talked, Luthor's Ring can be found in the secret room which Crackshot tried to open with Luthor's key from Umar.",
 		"replies":[
 			{
-				"nextPhraseID":"tt_sly_214",
+				"nextPhraseID":"tt_sly_213",
 				"text":"N"
 			}
 		]
 	},
     {
+        "id":"tt_sly_213",
+		"message":"So you have to go and ask Umar for Luthor's key.",
+		"replies":[
+			{
+				"nextPhraseID":"tt_sly_214",
+				"text":"No problem."
+			}
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"troubling_times",
+                "value":192
+            }
+        ]
+	},
+    {
         "id":"tt_sly_214",
-		"message":"However, it can only be opened if you also wear Luthor's gloves, which breaks the spell on the door.",
+		"message":"However, that door can only be opened if you also wear Luthor's gloves, which breaks the spell on it.",
 		"replies":[
 			{
 				"nextPhraseID":"tt_sly_216",
@@ -1671,7 +1775,7 @@
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
-                        "requireID":"g03_luthor",
+                        "requireID":"key_luthor",
                         "value":1,
 						"negate":true
                     }
@@ -1683,7 +1787,7 @@
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
-                        "requireID":"g03_luthor",
+                        "requireID":"key_luthor",
                         "value":1
                     }
                 ]
